@@ -1,6 +1,33 @@
 *{
-	
+	margin:0px;
+	padding: 0px;
+	border:0px;
 }
 
 body {
+}
+
+p{
+	text-align: justify;
+	line-height: 150%;
+}
+
+header{
+	
+}
+
+section{
+	
+}
+
+article{
+	
+}
+
+footer{
+	
+}
+
+#container{
+	
 }
