@@ -1,40 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-  <title>templates</title>
-  <meta name="description" content="" />
-  <meta name="author" content="Silmara" />
-
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
-
-  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-</head>
-
-<body>
-  <div>
-    <header>
-      <h1>templates</h1>
-    </header>
-    <nav>
-      <p><a href="/">Home</a></p>
-      <p><a href="/contact">Contact</a></p>
-    </nav>
-
-    <div>
-      
-    </div>
-
-    <footer>
-     <p>&copy; Copyright  by Silmara</p>
-    </footer>
-  </div>
-</body>
+<html lang="pt-br">
+   <head>
+  	    <meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="author" content="Silmara Lopes" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  
+        <title>Fale Conosco</title>
+  
+        <link href="/Estilos/estilo.css" type="text/css" rel="stylesheet" />
+  
+	</head>
+	<body>
+ 		<div id="container">
+    		<header>
+            	<h1>Fale Conosco</h1>
+    		</header>
+    		
+    		<div id="formulario">
+    		<form action=""method="post"enctype="multipart/form-data">
+    			<fieldset>
+    				<legend>Fale Conosco</legend>
+    				
+    				<label for="Nome:">Nome:    					
+    				<input type="text" id="nome" required=""/>	
+    				</label>
+    				
+    				<label for="E-mail:">E-mail:    					
+    				<input type="email" id="email" required=""/>	
+    				</label>
+    				
+    				<label for="Assunto:">Assunto:    					
+    				<input type="text" id="assunto" required=""/>	
+    				</label>
+    				
+    				<label for="Mensagem:">Mensagem:    					
+    				<input type="text" id="mensagem" required=""/>	
+    				</label>
+					<input type="submit" name="Enviar" />	
+    				
+    			</fieldset>
+    			
+    		</form>
+    		</div>
+    
+    		<footer>
+				<p>
+					&copy; Copyright  by Silmara Lopes
+		        </p>
+			</footer>
+  		</div>
+	</body>
 </html>
