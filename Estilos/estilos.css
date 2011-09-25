@@ -32,5 +32,16 @@ footer{
 #container{
 	margin: 5px;
 	padding: 5px;
-	background-color: red;
 }
+
+#formulario form{
+	width:300px;
+	display:block;
+	margin:0 auto;
+}
+	
+#formulario fieldset{
+	border:0;
+	padding:0 15px 10px 15px;
+}
+
