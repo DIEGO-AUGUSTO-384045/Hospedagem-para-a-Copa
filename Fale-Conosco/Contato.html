@@ -8,7 +8,7 @@
   
         <title>Fale Conosco</title>
   
-        <link href="/Estilos/estilo.css" type="text/css" rel="stylesheet" />
+        <link href="estilo-contato.css" type="text/css" rel="stylesheet" />
   
 	</head>
 	<body>
@@ -17,26 +17,24 @@
             	<h1>Fale Conosco</h1>
     		</header>
     		
+    		<!-- Início da caixa do Fale Conosco -->
     		<div id="formulario">
     		<form action=""method="post"enctype="multipart/form-data">
     			<fieldset>
     				<legend>Fale Conosco</legend>
     				
-    				<label for="Nome:">Nome:    					
-    				<input type="text" id="nome" required=""/>	
-    				</label>
+    				<label><span>Nome: </span></label>					
+    				<input type="text" id="nome" required="" /><br />	
     				
-    				<label for="E-mail:">E-mail:    					
-    				<input type="email" id="email" required=""/>	
-    				</label>
+    				<label><span>E-mail:</span></label>			
+    				<input type="email" required=""/><br />	
     				
-    				<label for="Assunto:">Assunto:    					
-    				<input type="text" id="assunto" required=""/>	
-    				</label>
+    				<label><span>Assunto: </span></label>   					
+    				<input type="text" required=""/><br />	
     				
-    				<label for="Mensagem:">Mensagem:    					
-    				<input type="text" id="mensagem" required=""/>	
-    				</label>
+    				<label><span>Mensagem:</span></label>
+    				<textarea rows="2" cols="20"></textarea><br />					
+					
 					<input type="submit" name="Enviar" />	
     				
     			</fieldset>

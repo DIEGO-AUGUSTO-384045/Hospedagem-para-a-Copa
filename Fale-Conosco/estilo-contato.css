@@ -1,0 +1,43 @@
+body {
+}
+form {
+	width:300px;
+	display:block;
+	margin:0 auto;
+}
+	
+fieldset{
+	border: solid 1px #000;
+	padding:0 20px 15px 20px;
+}
+
+
+#formulario{
+	width: 300px;
+}
+
+input[type="email"] {
+	width:300px;
+	padding: 5px;
+	margin-bottom:20px;
+	margin-left: 5px;
+	font-size: medium;
+}
+
+label{
+	text-align: right;
+	width: 35px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+label span{
+	text-align: right;
+	font-weight: bold;
+	font-size: medium;
+}
+
+br {
+	clear: left;
+}
+
