@@ -16,11 +16,21 @@ fieldset{
 	width: 300px;
 }
 
+input[type="text"] {
+    font-size: medium;
+    margin-bottom: 8px;
+    margin-left: 14px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 250px;
+}
+
 input[type="email"] {
-	width:300px;
+	width: 300px;
 	padding: 5px;
+	margin-top: -7px;
 	margin-bottom:20px;
-	margin-left: 5px;
+	margin-left: 84px;
 	font-size: medium;
 }
 
