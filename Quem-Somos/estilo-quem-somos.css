@@ -1,0 +1,56 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+ }
+ 
+body {
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+p{
+	text-align: justify;
+	line-height: 150%;
+	font-size: 12pt;	
+}
+
+header{
+	font-size: 14pt;
+}
+
+section{
+	
+}
+
+article{
+	
+}
+
+footer{
+	
+}
+
+#container{
+	margin: 5px;
+	padding: 5px;
+	background-color: red;
+	
+}
+textarea{
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: justify;
+	line-height: 150%;
+}
+.groupBox{
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-size: 8px;
+	position: absolute;
+	left: 25px;
+	top: 184px;
+	width: 149px;
+	height: 105px;
+	padding: 20px;
+	
+}
