@@ -9,10 +9,8 @@
 		<title>Login</title>
 
 		<link href="estilo-login.css" type="text/css" rel="stylesheet" />
-		<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-		<script src="/Bibliotecas/JQuery/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 		<script src="script-login.js" type="text/javascript"></script>
 
 	</head>
@@ -24,7 +22,6 @@
 			</header>
 			<section>
 				
-				
 				<!-- Início da caixa de Slides -->
 				<div id="container-slides" class="nivoSlider">
 					
@@ -33,20 +30,23 @@
 				<!--Início Caixa de Login-->
 		    	<div id="caixa-login">
 		    		<form>
-		    			<label><span>Email:  </span></label>
+		    			<label><span>Email:</span></label>
 		    			<input type="email" />
 		    		
-		    			<label><span>Senha:  </span></label>
+		    			<label><span>Senha:</span></label>
 		    			<input type="password" />
 		    		
-		    			<input type="submit" value="Entrar" />
+		    			<input class="botao botao-azul" type="submit" value="Entrar" />
 		    		</form>
 		    	</div>
-
+		    	
+		    	<!-- Início Opção Cadastrar Novo Usuário-->
+		    	<div id="caixa-cadastrar">
+		    		<label id="titulo-cadastrar">Não possui cadastro?</label>
+					<input type="button" class="botao botao-azul" value="Inscreva-se" />
+		    	</div>
+		    
 			</section>
-			
-		 
-			
 			
 			<footer>
 				<p>
