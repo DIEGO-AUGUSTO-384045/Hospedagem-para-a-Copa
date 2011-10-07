@@ -1,0 +1,102 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+
+p{
+	text-align: justify;
+	line-height: 150%;
+	
+}
+
+header {
+    border: 1px solid white;
+    padding: 1px;
+}
+
+section {
+    height: 1000px;
+    margin-bottom: 200px;
+    margin-top: 0;
+    padding: 0;
+}
+
+form {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:585px;
+}
+
+form input {
+    border: 1px solid black;
+    font-size: medium;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 442px;
+}
+
+label{
+	font-weight: bold;
+	text-align: center;
+}
+
+input [type="submit"]{
+	margin-top: 100px;
+	width: 50px;
+}
+
+footer {
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+#container{
+	margin: 5px;
+	padding: 5px;
+}
+
+/* Estilos do container-imagem */
+#container-Imagem{
+	width: 652px;
+	height: 354px;
+	float: left;
+	margin-top:30px;
+	margin-bottom:10px;
+	border: 1px solid gray;
+}
+div#descricao{
+	padding: 60px;
+	border: 1px solid black;
+	background-color: white;;
+    border-radius: 10px;
+    float: right;
+    height: 235px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+#container-Informacao {
+    border: 1px solid black;
+    float: right;
+    margin-right: 675px;
+    margin-top: 20px;
+    padding: 22px;
+    width: 605px;
+    border-radius: 10px 10px 10px;
+}
+   
+.descricao{
+	text-align: justify;
+	line-height: 150%;
+	margin: -45px;
+}
