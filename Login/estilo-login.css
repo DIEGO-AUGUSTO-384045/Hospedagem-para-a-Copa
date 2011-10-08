@@ -7,6 +7,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12pt;
+	
 }
 
 
@@ -16,9 +17,25 @@ p{
 	position: relative;
 }
 
+a{
+	text-decoration: none;
+	color:#666666;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
 h1{
 	text-shadow: 3px 2px 3px #888;
 	font-weight: bolder;
+	color: white;
+}
+
+h1 a{
+	text-decoration: none;
+	color: white;
 }
 
 header, footer{
@@ -30,6 +47,8 @@ header, footer{
 
 header{
 	padding: 30px;
+	background-color: #1E90FF;
+	border-radius:5px;
 }
 
 section{
@@ -43,7 +62,6 @@ article{
 
 footer{
 	padding: 15px;
-	
 }
 
 label{
@@ -167,4 +185,11 @@ label span{
 	font-weight: normal;
 	color: #0066CC;
 	font-size:26px;
+}
+
+/* Estilos Rodape */
+#copyright{
+	float: right;
+	position: relative;
+	margin: 2px;
 }
