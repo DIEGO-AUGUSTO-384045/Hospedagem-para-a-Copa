@@ -38,17 +38,17 @@ h1 a{
 	color: white;
 }
 
-header, footer{
-	box-shadow: 2px 2px 2px #888;
-	background-color: white;
-	border-radius: 5px;
+h1 a:hover{
+	text-decoration: none;
 }
+
 
 
 header{
 	padding: 30px;
 	background-color: #1E90FF;
 	border-radius:5px;
+	box-shadow: 2px 2px 2px #888;
 }
 
 section{
@@ -56,12 +56,13 @@ section{
 	padding: 20px;
 }
 
-article{
-	
-}
-
 footer{
+	box-shadow: 1px 1px 5px #888;
+	background:white;
+	border-radius: 5px;
 	padding: 15px;
+	color:#666666;
+	margin-bottom: 2px;
 }
 
 label{
@@ -188,8 +189,11 @@ label span{
 }
 
 /* Estilos Rodape */
-#copyright{
+footer span{
 	float: right;
 	position: relative;
-	margin: 2px;
+}
+
+footer a:hover{
+	color: black;
 }
