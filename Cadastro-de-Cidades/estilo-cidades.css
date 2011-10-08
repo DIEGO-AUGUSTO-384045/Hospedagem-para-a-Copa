@@ -9,30 +9,24 @@ body {
 	font-size: 12pt;
 }
 
-
-p{
-	text-align: justify;
-	line-height: 150%;
-	
-}
-
 header {
-    border: 1px solid white;
-    padding: 1px;
+    border: 1px solid gray;
+    padding: 30px;
 }
 
 section {
-    height: 1000px;
+    height: 960px;
     margin-bottom: 200px;
     margin-top: 0;
-    padding: 0;
+    padding: 20px;;
 }
 
 form {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:585px;
+	border: 1px solid black;
+    height: 660px;
+    margin: 18px;
+    padding: 20px 20px 30px;
+    width: 500px;
 }
 
 form input {
@@ -41,23 +35,42 @@ form input {
     height: 20px;
     margin-bottom: 20px;
     margin-top: 5px;
-    padding: 5px;
+    padding: 7px;
     width: 442px;
+    float: none;   
 }
 
 label{
 	font-weight: bold;
 	text-align: center;
-}
-
-input [type="submit"]{
-	margin-top: 100px;
-	width: 50px;
+	font-weight: bold;
 }
 
 footer {
     border: 1px solid gray;
     padding: 15px;
+    clear: both;
+}
+
+input[type="reset"]{
+	width: 80px;
+	margin-left: 145px;
+	box-shadow: 0px 0px 5px #00CCFF;
+	height: 37px;  
+}
+
+input[type="submit"]{
+	width: 80px;
+	margin-left: 5px;
+	box-shadow: 0px 0px 5px #00CCFF;
+	height: 37px;  
+}
+
+input[type="file"]{
+    height: 35px;
+    margin-left: 20px;
+    width: 332px; 
+    margin-top: 10px; 
 }
 
 #container{
@@ -65,38 +78,34 @@ footer {
 	padding: 5px;
 }
 
-/* Estilos do container-imagem */
-#container-Imagem{
-	width: 652px;
-	height: 354px;
-	float: left;
-	margin-top:30px;
-	margin-bottom:10px;
-	border: 1px solid gray;
-}
-div#descricao{
-	padding: 60px;
-	border: 1px solid black;
-	background-color: white;;
-    border-radius: 10px;
-    float: right;
-    height: 235px;
-    margin-top: 30px;
-    width: 500px;
-}
-
 #container-Informacao {
     border: 1px solid black;
+    border-radius: 10px;
+    height: 780px;
+    margin: 40px auto;
+    padding: 20px 20px 30px;
+    width: 575px;
     float: right;
-    margin-right: 675px;
-    margin-top: 20px;
-    padding: 22px;
-    width: 605px;
-    border-radius: 10px 10px 10px;
 }
+
+.botao{
+	text-align: center;
+	text-decoration: none;
+	font: 14px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	padding: 8px 20px 8px;
+	font-size: 12pt;
+}
+
+.botao-azul{
+	-webkit-gradient(linear, 0 0%, 0 100%, from(#00ADEE), to(#0078A5));
+	background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+    border: 1px solid #0076A3;
+    color: #D9EEF7;
+}
+
    
-.descricao{
-	text-align: justify;
-	line-height: 150%;
-	margin: -45px;
-}

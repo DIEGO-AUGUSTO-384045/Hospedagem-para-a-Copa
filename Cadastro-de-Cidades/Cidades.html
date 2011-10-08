@@ -7,30 +7,50 @@
 	     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	     
 		<title>Cidades</title>
+		
+		<link href="estilo-cidades.css" type="text/css" rel="stylesheet" />
+	
 	</head>
 	<body>
-		<div>
+		<div id="container">
 			<header>
-				<h1>Cidades</h1>
+				<h1>Cadastro de Cidades</h1>
 			</header>
-				<h2>Escolha a Cidade:</h2>
-				<p>
-					<a href="Belo-Horizonte.html">Belo Horizonte</a> <br>
-					<a href="">Brasília</a> <br>
-					<a href="">Cuiabá</a> <br>
-					<a href="">Curitiba</a> <br>
-					<a href="">Fortaleza</a> <br>
-					<a href="">Manaus</a> <br>
-					<a href="">Natal</a> <br>
-					<a href="">Porto Alegre</a> <br>
-					<a href="">Recife</a> <br>
-					<a href="">Rio de Janeiro</a> <br>
-					<a href="">Salvador</a> <br>
-					<a href="">São Paulo</a> <br>
+		
+		<div id="container-Informacao" class="Informacao">
+                	
+        	<h2>Incluir nova cidade</h2>
+            <form>
+		    	<label><span>Nome:</span></label>
+		    	<input type="text" id="nome" />
+		    		
+		    	<label><span>Fundação:</span></label>
+		    	<input type="text" id="fundacao" />
+		    			
+		    	<label><span>Área:</span></label>
+		    	<input type="text" id="area" />
+		    			
+		    	<label><span>Habitantes:</span></label>
+		    	<input type="text" id="habitantes" />
+		    			
+		    	<label><span>Altitude:</span></label>
+		    	<input type="text" id="altitude" />
+		    			
+		    	<label><span>Longitude:</span></label>
+		    	<input type="text" id="longitude" />
+		    			
+		    	<label><span>Latitude:</span></label>
+		    	<input type="text" id="latitude" />
+		    	
+		    	<label><span>Imagem:</span></label>
+		    	<input type="file" id="imagem" />
+		    	
+		    	<input class="botao botao-azul" type="reset" value="Limpar" />
+		    	<input class="botao botao-azul" type="submit" value="Salvar" />
+		    
+		    </form>
+           </div>
 					
-				</p>
-				
-			
 			<footer>
 				<p>
 					&copy; Copyright  by Silmara
