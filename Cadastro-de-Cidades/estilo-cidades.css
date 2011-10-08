@@ -22,7 +22,7 @@ section {
 }
 
 form {
-	border: 1px solid black;
+	border: 1px solid white;
     height: 660px;
     margin: 18px;
     padding: 20px 20px 30px;
@@ -106,6 +106,16 @@ input[type="file"]{
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
     border: 1px solid #0076A3;
     color: #D9EEF7;
+}
+
+.botao:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.botao:active{
+	position: relative;
+	top: 1px;
 }
 
    
