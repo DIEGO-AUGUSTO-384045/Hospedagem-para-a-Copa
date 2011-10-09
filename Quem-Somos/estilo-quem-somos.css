@@ -16,6 +16,8 @@ p{
 
 header{
 	font-size: 14pt;
+	padding: 30px;
+	border: 1px solid gray;
 }
 
 section{
@@ -27,25 +29,19 @@ article{
 }
 
 footer{
-	
+	padding: 15px;
+	border: 1px solid gray;
 }
 
 #container{
 	margin: 5px;
 	padding: 5px;
-	background-color: red;
 	
 }
-textarea{
-	font-family: Arial, "MS Trebuchet", sans-serif;
-	font-size: 12pt;
-	font-weight: bold;
-	text-align: justify;
-	line-height: 150%;
-}
+
 .groupBox{
 	font-family: Arial, "MS Trebuchet", sans-serif;
-	font-size: 8px;
+	font-size: px;
 	position: absolute;
 	left: 25px;
 	top: 184px;
@@ -53,4 +49,12 @@ textarea{
 	height: 105px;
 	padding: 20px;
 	
+}
+.fieldset{
+	height: 200px;
+	width: 500px;
+}
+aside{
+	padding: 15px;
+	border: 1px solid gray;	
 }
