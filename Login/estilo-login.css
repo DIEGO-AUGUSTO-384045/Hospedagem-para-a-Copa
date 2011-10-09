@@ -29,8 +29,10 @@ a:hover{
 
 h1{
 	text-shadow: 3px 2px 3px #888;
-	font-weight: bolder;
 	color: white;
+    font-family:'Dancig Script',cursive;
+    font-weight: normal;
+    font-size: 28px;
 }
 
 h1 a{
@@ -48,7 +50,7 @@ header{
 	padding: 30px;
 	background-color: #1E90FF;
 	border-radius:5px;
-	box-shadow: 2px 2px 2px #888;
+	box-shadow: 2px 2px 3px #666666;
 }
 
 section{
@@ -56,14 +58,27 @@ section{
 	padding: 20px;
 }
 
+/* Estilos do Rodape */
 footer{
 	box-shadow: 1px 1px 5px #888;
 	background:white;
 	border-radius: 5px;
 	padding: 15px;
 	color:#666666;
-	margin-bottom: 2px;
+	
 }
+
+footer span{
+	float: right;
+	position: relative;
+}
+
+footer a:hover{
+	color: black;
+	text-shadow: 2px 0px 3px #888;
+}
+
+
 
 label{
 	font-weight: bold;
@@ -98,10 +113,15 @@ div#caixa-login form{
 	
 }
 
+input:focus{
+	border:none;
+	box-shadow: 0px 0px 4px 2px #1E90FF;
+	
+}
+
 input[type="submit"]{
 	width: 80px;
-	margin-left: 58px;
-	box-shadow: 0px 0px 5px #00CCFF;  
+	margin-left: 58px; 
 }
 
 
@@ -156,19 +176,52 @@ label span{
 
 .botao:active{
 	position: relative;
+	border:1px solid;
 	top: 1px;
 }
 
 /* Estilos do container-slides */
-#container-slides{
+#s3slider{
 	width: 675px;
 	height: 400px;
+	position: relative;
+	overflow: hidden;
 	float: left;
 	margin-top:30px;
 	margin-bottom:10px;
-	border: 1px solid gray;
+	box-shadow: 2px 2px 4px #888;
+	
 }
 
+
+#s3sliderContent{
+	width: 675px;
+	position: absolute;
+	top:0px;
+	margin-left: 0px;
+}
+
+.s3sliderImage{
+	float: left;
+	position: relative;
+	display: none;
+}
+
+.s3sliderImage span{
+	position: absolute;
+	left: 0;
+	padding: 10px 13px;
+	width: 675px;
+	background-color: #000;
+	opacity: 0.8;
+	color: #FFFFFF;
+	display: none;
+	bottom: 0;
+}
+
+.clear{
+	clear: both;
+}
 
 /* Estilos caixa-cadastrar */
 #caixa-cadastrar{
@@ -188,12 +241,3 @@ label span{
 	font-size:26px;
 }
 
-/* Estilos Rodape */
-footer span{
-	float: right;
-	position: relative;
-}
-
-footer a:hover{
-	color: black;
-}
