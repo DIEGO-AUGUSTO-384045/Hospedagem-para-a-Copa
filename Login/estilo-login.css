@@ -98,8 +98,8 @@ input{
 
 /* Estilos do Formulário de Login */
 #caixa-login{
-	width: 450px;
-	height: 290px;
+	width: 350px;
+    height: 195px;
 	float:right;
 	margin-top:90px;
 	margin-right:25px;
