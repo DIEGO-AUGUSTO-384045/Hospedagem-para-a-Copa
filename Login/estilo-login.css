@@ -98,8 +98,8 @@ input{
 
 /* Estilos do Formulário de Login */
 #caixa-login{
-	width: 350px;
-	height: 195px;
+	width: 450px;
+	height: 290px;
 	float:right;
 	margin-top:90px;
 	margin-right:25px;
@@ -201,7 +201,6 @@ label span{
 	box-shadow: 2px 2px 4px #888;
 	
 }
-
 
 #s3sliderContent{
 	width: 675px;
