@@ -1,0 +1,127 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	
+}
+
+
+p{
+	text-align: justify;
+	line-height: 150%;
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+	color:#666666;
+}
+
+a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+h1{
+	text-shadow: 3px 2px 3px #888;
+	color: white;
+    font-family:'Dancig Script',cursive;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+h1 a{
+	text-decoration: none;
+	color: white;
+}
+
+h1 a:hover{
+	text-decoration: none;
+}
+
+
+
+header{
+	padding: 30px;
+	background-color: #1E90FF;
+	border-radius:5px;
+	box-shadow: 2px 2px 3px #666666;
+}
+
+aside{
+	width: 215px;
+	height: 500px;
+	margin-top:20px;
+	margin-left:10px;
+	box-shadow: 2px 2px 3px #666666;
+	border-radius:5px;
+	position:relative;
+	float: left;
+	padding: 4px;
+}
+
+img{
+	width: 195px;
+	height: 195px;
+	border: 1px solid black;
+	border-radius: 5px;
+	
+}
+
+figcaption{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14pt;
+	text-align: center;
+	margin: 0px 5px 10px 5px;
+	padding:0px 2px 2px 2px;
+}
+
+figure{
+	width: 195px;
+	height: 230px;
+	padding:0px 2px 10px 2px;
+	margin: 8px;
+}
+
+section{
+	min-height: 465px;
+	height:800px;
+	width:939px;
+	padding: 20px;
+	margin:  20px 10px 20px 20px;
+	box-shadow: 2px 2px 3px #666666;
+	border-radius:5px;
+	position:relative;
+	float:right;
+}
+
+/* Estilos do Rodape */
+footer{
+	box-shadow: 1px 1px 5px #888;
+	background:white;
+	border-radius: 5px;
+	padding: 15px;
+	color:#666666;
+	clear: both;
+}
+
+footer span{
+	float: right;
+	position: relative;
+}
+
+footer a:hover{
+	color: black;
+	text-shadow: 2px 0px 3px #888;
+}
+
+#container{
+	margin: 5px;
+	padding: 5px;
+}
