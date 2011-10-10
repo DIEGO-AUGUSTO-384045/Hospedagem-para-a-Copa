@@ -1,68 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
-		<meta charset="utf-8" />
-
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-		<title>Quem-Somos</title>
+		<meta charset="utf-8" />		
 		<meta name="description" content="" />
-		<meta name="generator" content="Studio 3 http://aptana.com/" />
 		<meta name="author" content="Marilene" />
-
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<meta name="generator" content="Studio 3 http://aptana.com/" />		
+		
+		<title>Quem-Somos</title>	
+		
+		<link  href="estilo-quem-somos.css" type="text/css" rel="stylesheet" />
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-		<link type="text/css" rel="stylesheet" href="estilo-quem-somos.css" />
-
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+		<script src="../Bibliotecas/JQuery/s3Slider.js" type="text/javascript"></script>
+		<script src="Scripts/script-quem-somos.js" type="text/javascript"></script>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu|Dancing+Script' rel='stylesheet' type='text/css'>
 	</head>
+	
 	<body>
 		<div id="container">
+			
 			<header>
-				<h1 >Quem-Somos</h1>
+				<h1><a href="../index.html">Traveller's House</a></h1>
 			</header>
-			<aside>
-				<nav>
-					<p>
-						<a href="/">Home</a>
-					</p>
-					<p>
-						<a href="/contact">Contact</a>
-					</p>
-			</nav>
-			</aside>
-			<section>
-				<article>
-					<form>
-						<fieldset class="groupBox">
-							<legend>Informações do Site:</legend>
-					               	A equipe MEDS tem como objetivo, oferecer oportunidades de hospedagens via Web, promovendo conforto e segurança aos turistas interessados.
-					            
-					    </fieldset> 					   
-					</form>
-				</article>
-				<article>
-					<form>
-						<fieldset >
-							<legend>Informações dos Proprietários do Site:</legend>
-							<a href="http://lattes.cnpq.br/7952495893900774"> Marilene S.A</a>
-					        <img src="Imagens/Marilene.jpg">
-					   </fieldset>
-					</form>						   
-				</article>
-					
+			
+			<section>				
+				<!-- Início da caixa de Slides, mostra as imagens dos proprietários do site. -->			
+				<div id="s3slider">
+					<ul id="s3sliderContent">
+						<li class="s3sliderImage">
+							<img  src="Imagens/estilo-imagens-quem-Somos.css/Marilene.jpg" alt="Marilene"/>						
+							<span>Marilene S.A</span>
+						</li>
+						<li class="s3sliderImage">
+							<img  src="Imagens/estilo-imagens-quem-Somos.css/Elaine.jpg" alt="Elaine"/>
+							<span>Elaine Cristina</span>
+						</li>
+						<li class="s3sliderImage">
+							<img  src="Imagens/estilo-imagens-quem-Somos.css/Diego.jpg" alt="Diego"/>
+							<span>Diego Augusto</span>
+						</li>
+						<li class="s3sliderImage">
+							<img  src="Imagens/estilo-imagens-quem-Somos.css/Silmara.jpg" alt="Silmara"/>
+							<span>Silmara Lopes</span>
+						</li>
+						
+						<div class="clear s3sliderImage"></div>
+					</ul>					
+				</div>
+				
+								
+		    	 <div id="container-QuemSomos">		     	
+		     		<h1 >Quem-Somos</h1>
+		     		<p>		     						    				
+			       		Traveller's House é um site de ofertas de Hospedagem disponíveis no Brasil.<br/> 
+			       		Sua missão é oferecer aos turistas de forma prática e segura opções de hospedagens 
+			       		proporcionado aos mesmo, conforto e segurança em nosso Pais. 
+			    	</p>	
+			    				   	
+			     	<h1> Sobre os Proprietários do Site:</h1>
+			     	<p>
+			       		O site foi desenvolvido por uma equipe composta por 4 alunos do curso de Sistemas de Informação
+			       		da Universidade Catolica de Minas Gerais. <br>
+			       		São eles: MEDS <br>
+			        </p>
+			       	<ul>
+			       		<li><a href="http://lattes.cnpq.br/7952495893900774"> Marilene S.A</a></li>
+			       		<li>Elaine</li>
+			       		<li>Diego</li>
+			       		<li>Silmara</li>
+			       	</ul>			    	
+	             </div>
 			</section>
-
 			 
-			<footer>
+			<footer> 
 				<p>
-					&copy; Copyright 2011 by Marilene - Todos os direitos reservados aos autores acima.
-					
+				   <a href="../index.html">Início</a> | 
+				   <a href="../Quem-Somos/Quem-Somos.html">Quem Somos</a> | 
+			       <a href="../Fale-Conosco/Contato.html">Fale Conosco</a> 
+					<span>&copy; Traveller's House 2011. by Marilene - Todos os direitos reservados.</span>				
 				</p>
 			</footer>
 		</div>
