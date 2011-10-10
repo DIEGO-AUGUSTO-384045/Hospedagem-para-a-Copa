@@ -1,0 +1,87 @@
+/**
+ * @author Diego Augusto
+ */
+
+var mapa;
+var geocodificador;
+var marcador;
+
+$(document).ready(function(){
+	inicializa();
+});
+
+function inicializa () {
+	var coordenadas = pegaCoordenadas();
+	geocodificador = new google.maps.Geocoder();
+	
+	var opcoes = {
+		zoom: 5,
+		center: coordenadas,
+		mapTypeId:google.maps.mapTypeId.ROADMAP
+	};
+	
+    mapa = new google.maps.Map(document.getElementById('container-mapa'), opcoes);
+	
+} // Fim da função inicializa
+
+function codificaEndereco(){
+	var endereco = document.getElementById("endereco").value;
+	
+	if (geocodificador) {
+  	geocodificador.geocode( {'address':endereco}, function (resultados, status) {
+  		
+  		if(status == google.maps.GeocoderStatus.OK){
+  			mapa.setCenter(resultados[0].geometry.location);
+  			mapa.setZoom(25);
+  			marcador = new google.maps.Marker({ 
+  				map:mapa,
+  			    draggable: true,
+  				position: resultados[0].geometry.location
+  			});
+  		}
+  		else
+  		{
+  			alert("O geocodificador não completou a requisição devidao o seguinte motivo" + status);
+  		}
+  	});
+  }
+}
+
+
+function codificaCoordenadas(){
+	
+	var coordenadas = pegaCoordenadas();
+	
+	if (geocodificador) {
+		geocodificador.geocode({'latLng':coordenadas}, function(resultados, status){
+			
+			if (status == google.maps.GeocoderStatus.OK) {
+				
+				if(resultados[1]){
+					
+					mapa.setZoom(25);
+					marcador = new google.maps.Marker({
+						position: coordenadas,
+						map: mapa
+					});
+				}
+				
+			}else{
+				alert('O geocodificador falhou devido: ' + status);
+			}
+		
+		});
+	}
+}
+
+
+function pegaCoordenadas(){
+	var latitude = document.getElementById('latitude').value;
+	var longitude = document.getElementById('longitude').value;
+	return new google.maps.LatLng(latitude, longitude);
+}
+
+
+
+
+
