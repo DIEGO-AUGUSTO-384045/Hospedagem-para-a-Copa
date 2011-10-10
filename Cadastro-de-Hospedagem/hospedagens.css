@@ -1,0 +1,158 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	
+}
+
+
+p{
+	text-align: justify;
+	line-height: 150%;
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+	color:#666666;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+h1{
+	text-shadow: 3px 2px 3px #888;
+	font-weight: bolder;
+	color: white;
+}
+
+h1 a{
+	text-decoration: none;
+	color: white;
+}
+
+h1 a:hover{
+	text-decoration: none;
+}
+
+
+
+header{
+	padding: 30px;
+	background-color: #1E90FF;
+	border-radius:5px;
+	box-shadow: 2px 2px 2px #888;
+}
+
+section{
+	height: 465px;
+	padding: 20px;
+}
+
+footer{
+	box-shadow: 1px 1px 5px #888;
+	background:white;
+	border-radius: 5px;
+	padding: 15px;
+	color:#666666;
+	margin-bottom: 2px;
+}
+
+label{
+	font-weight: bold;
+}
+
+input{
+	border: 1px solid gray;
+	
+}
+
+/* Estilos do Caixa propriedade */
+#caixa-propriedade{
+	width: 550px;
+	height: 300px;
+	float:none;
+	margin-top:30px;
+	padding:51px;
+	background-color: #F5F5F5;;	
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #888;
+}
+div#caixa-propriedade form{
+	padding: 58px 10px 10px 12px;
+	
+}
+
+
+/* Estilos do Caixa de Hospedagem*/
+#caixa-hospedagem{
+	width: 522px;
+	height: 300px;
+	float:right;
+	margin-top:-400px;
+	padding:51px;
+	background-color: #F5F5F5;;	
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #888;
+}
+
+div#caixa-hospedagem form{
+	padding: 58px 10px 10px 12px;
+	
+}
+
+
+
+label span{
+	text-align: right;
+	font-weight: bold;
+	font-size: medium;
+}
+
+.botao{
+	text-align: center;
+	text-decoration: none;
+	font: 14px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	padding: 8px 20px 8px;
+	font-size: 12pt;
+}
+
+.botao-azul{
+	-webkit-gradient(linear, 0 0%, 0 100%, from(#00ADEE), to(#0078A5));
+	background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+    border: 1px solid #0076A3;
+    color: #D9EEF7;
+}
+
+.botao:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.botao:active{
+	position: relative;
+	top: 1px;
+}
+
+
+/* Estilos Rodape */
+footer span{
+	float: right;
+	position: relative;
+}
+
+footer a:hover{
+	color: black;
+}
