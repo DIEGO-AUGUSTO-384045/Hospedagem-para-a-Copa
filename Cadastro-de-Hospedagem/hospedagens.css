@@ -6,7 +6,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12pt;
+	font-size: 9pt;
 	
 }
 
@@ -29,8 +29,10 @@ a:hover{
 
 h1{
 	text-shadow: 3px 2px 3px #888;
-	font-weight: bolder;
 	color: white;
+    font-family:'Dancig Script',cursive;
+    font-weight: normal;
+    font-size: 28px;
 }
 
 h1 a{
@@ -56,6 +58,14 @@ section{
 	padding: 20px;
 }
 
+
+label{
+	font-weight: bold;
+	text-align: center;
+	font-weight: bold;
+	font-size: 9pt;
+}
+
 footer{
 	box-shadow: 1px 1px 5px #888;
 	background:white;
@@ -65,38 +75,57 @@ footer{
 	margin-bottom: 2px;
 }
 
-label{
-	font-weight: bold;
-}
 
 input{
 	border: 1px solid gray;
 	
 }
 
-/* Estilos do Caixa propriedade */
-#caixa-propriedade{
-	width: 550px;
-	height: 300px;
-	float:none;
-	margin-top:30px;
-	padding:51px;
-	background-color: #F5F5F5;;	
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px #888;
+
+
+aside{
+	width: 215px;
+	height: 455px;
+	margin-top:20px;
+	margin-left:10px;
+	box-shadow: 2px 2px 3px #666666;
+	border-radius:5px;
+	position:relative;
+	float: left;
+	padding: 4px;
 }
-div#caixa-propriedade form{
-	padding: 58px 10px 10px 12px;
+
+img{
+	width: 195px;
+	height: 195px;
+	border: 1px solid black;
+	border-radius: 5px;
 	
 }
+
+figcaption{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14pt;
+	text-align: center;
+	margin: 0px 5px 10px 5px;
+	padding:0px 2px 2px 2px;
+}
+
+figure{
+	width: 195px;
+	height: 230px;
+	padding:0px 2px 10px 2px;
+	margin: 8px;
+}
+
 
 
 /* Estilos do Caixa de Hospedagem*/
 #caixa-hospedagem{
-	width: 522px;
-	height: 300px;
+	width: 945px;
+	height: 345px;
 	float:right;
-	margin-top:-400px;
+	margin-top:5px;
 	padding:51px;
 	background-color: #F5F5F5;;	
 	border-radius: 10px;

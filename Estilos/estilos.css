@@ -15,17 +15,34 @@ p{
 	line-height: 150%;
 	position: relative;
 }
+a:hover{
+	text-decoration: underline;
+}
+
+
+h1{
+	text-shadow: 3px 2px 3px #888;
+	color: white;
+    font-family:'Dancig Script',cursive;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+h1 a{
+	text-decoration: none;
+	color: white;
+	margin-left: 140px;
+}
+
 h1 a:hover{
 	text-decoration: none;
 }
 
-
-
 header{
-	padding: 0px;
-	background-color: white;
+	padding: 10px;
+	background-color: #1E90FF;
 	border-radius:5px;
-	box-shadow: 2px 2px 2px #888;
+	box-shadow: 2px 2px 3px #666666;
 }
 
 section{
@@ -74,11 +91,11 @@ footer{
 
 
 div#caixa-de-opcao{
-	width: 400px;
+	width: 265px;
 	height: 220px;
 	float:right;
-	margin-top:85px;
-	padding:20px;
+	margin-top:65px;
+	padding:55px;
 	background-color: #F5F5F5;;	
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px #888;
@@ -123,6 +140,8 @@ margin-top: 58px;
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
     border: 1px solid #0076A3;
     color: #D9EEF7;
+    margin-left: 93px;
+    width: 80px;
   
 }
 
