@@ -76,6 +76,7 @@ img{
 	width: 164px;
 	height: 164px;
 	border: 1px solid black;
+	border-radius: 5px;
 }
 
 figcaption{
@@ -129,25 +130,42 @@ nav  a{
 	padding: 8px;
 	height: 25px;
 	border-bottom: 1px solid #F1F1F1;
-  	display:block;
-  	position: relative;
+   	position: relative;
+   	display: block;
 }
 
 
-nav a:hover{
+nav p:hover{
 	background-color: #1E90FF;
 	cursor: pointer;
 	color: white;
 }
 
-
-nav a .mensagens{
-	background: url('../Imagens/Ícones/mensagens.png') no-repeat;
-	display: none;
-    position: absolute;
-    height: 32px;
-    width: 32px;
+nav a:hover{
+	color: white;
 }
+
+.icone-menu{
+	height: 32px;
+    width: 32px;
+    margin:3px 5px 0 10px;
+    float:left;
+    position: relative;
+    border: none;
+}
+
+.mensagens{
+	background: url('../Imagens/Ícones/mensagens.png') no-repeat;
+}
+
+.meus-imoveis{
+	background: url('../Imagens/Ícones/arquivo-hospedagem.png') no-repeat;
+}
+
+.minha-conta{
+	background: url('../Imagens/Ícones/usuario.png') no-repeat;
+}
+
 
 
 
