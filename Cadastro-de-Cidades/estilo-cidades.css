@@ -8,10 +8,19 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12pt;
 }
+h1{
+	text-shadow: 3px 2px 3px #888;
+	color: white;
+    font-family:'Dancig Script',cursive;
+    font-weight: normal;
+    font-size: 28px;
+}
 
-header {
-    border: 1px solid gray;
-    padding: 30px;
+header{
+	padding: 30px;
+	background-color: #1E90FF;
+	border-radius:5px;
+	box-shadow: 2px 2px 3px #666666;
 }
 
 section {
@@ -22,22 +31,23 @@ section {
 }
 
 form {
-	border: 1px solid white;
-    height: 660px;
+	height: 660px;
     margin: 18px;
     padding: 20px 20px 30px;
     width: 500px;
 }
 
 form input {
-    border: 1px solid black;
     font-size: medium;
     height: 20px;
     margin-bottom: 20px;
     margin-top: 5px;
     padding: 7px;
     width: 442px;
-    float: none;   
+    float: none; 
+	border:none;
+    border-radius: 4px 4px 4px 4px;
+	border: 1px solid gray;
 }
 
 label{
@@ -45,7 +55,15 @@ label{
 	text-align: center;
 	font-weight: bold;
 }
-
+/* Estilos do Rodape */
+footer{
+	box-shadow: 1px 1px 5px #888;
+	background:white;
+	border-radius: 5px;
+	padding: 15px;
+	color:#666666;
+	
+}
 footer {
     border: 1px solid gray;
     padding: 15px;
@@ -58,6 +76,7 @@ input[type="reset"]{
 	box-shadow: 0px 0px 5px #00CCFF;
 	height: 37px;  
 }
+
 
 input[type="submit"]{
 	width: 80px;
@@ -79,15 +98,24 @@ input[type="file"]{
 }
 
 #container-Informacao {
-    border: 1px solid black;
     border-radius: 10px;
     height: 780px;
     margin: 40px auto;
     padding: 20px 20px 30px;
     width: 575px;
     float: right;
+    background-color: #F5F5F5;	
+	box-shadow: 2px 2px 2px #888;
 }
 
+
+div#container-Informacao h3{
+	float: right;
+	position: relative;
+	margin-right:10px;
+	font-family: 'Ubuntu', sans-serif;
+	color:#666666;
+}
 .botao{
 	text-align: center;
 	text-decoration: none;
@@ -116,6 +144,16 @@ input[type="file"]{
 .botao:active{
 	position: relative;
 	top: 1px;
+}
+
+footer span{
+	float: right;
+	position: relative;
+}
+
+footer a:hover{
+	color: black;
+	text-shadow: 2px 0px 3px #888;
 }
 
    

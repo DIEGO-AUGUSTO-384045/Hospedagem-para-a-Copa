@@ -14,9 +14,28 @@ p{
 	line-height: 150%;
 }
 
+h1{
+	text-shadow: 3px 2px 3px #888;
+	color: white;
+    font-family:'Dancig Script',cursive;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+h1 a{
+	text-decoration: none;
+	color: white;
+}
+
+h1 a:hover{
+	text-decoration: none;
+}
+
 header{
 	padding: 30px;
-	border: 1px solid gray;
+	background-color: #1E90FF;
+	border-radius:5px;
+	box-shadow: 2px 2px 3px #666666;
 }
 
 section{
