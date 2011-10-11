@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta name="description" content="" />
+		<meta name="author" content="Marilene" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		
+		<title>Proprietario</title>
+				
+		<link href="estilo-proprietario.css" type="text/css" rel="stylesheet"  />
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+		<script src="../Bibliotecas/JQuery/s3Slider.js" type="text/javascript"></script>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu|Dancing+Script'
+	</head>
+	<body>
+		<div id="container">
+			
+			<header>
+				<h1><a href="../index.html">Traveller's House</a></h1>
+			</header>
+			
+			<section>
+				<div id="container-Cadastro">		     	
+		     		<h1 >Cadastro de Proprietários</h1>
+					<form>
+   					 	<label name="nome" method="post" action=""><span>Nome</span></label>
+    				 	<input type="text" name="textfield" maxlength=40 autofocus="true" required="true" /> 
+    				 	<label name="telefone" method="post" action=" "><span>Telefone:</span></label>
+    				 	<input type="text" name="textfield" maxlength=19 required="true" /> 
+    				 	<label name="email" method="post" action=" " ><span>Email:</span></label>
+    				 	<input type="text" name="textfield" maxlength=40 required="true"/> <br />
+    				 
+   					 	<fieldset>   					 	
+      						<legend>Endereço</legend>
+      						<address>
+      							<label name="rua" method="post" action="">Rua </label>
+      							<input type="text" name="textfield" maxlength=30 required="true"/> 
+      							<label name="numero" method="post" action="">Número </label>
+      							<input type="text" name="textfield" maxlength=4 required="true" /> 
+      							<label name="complemento" method="post" action="">Complemento</label>
+      							<input type="text" name="textfield" maxlength=20 required="true"/> <br/>
+      							<label name="bairro" method="post" action="">Bairro </label>
+      							<input type="text" name="textfield" maxlength=15  required="true"/> 
+      							<label name="cidade" method="post" action="">Cidade </label>
+      							<input type="text" name="textfield" maxlength=15 required="true"/>
+      							<label name="cep" method="post" action="">CEP </label>
+      							<input type="text" name="textfield" maxlength=8 required="true"/> <br/>
+      							<label name="estado" method="post" action"">Estado </label>
+      							<input type="text" name="textfield" maxlenght=2 required="true" />
+      							<label name="pais" method="post" action="">Pais</label>
+      							<input type="text" name="textfield" maxlength=10 required="true"/>
+      					   </address>
+    				    </fieldset>
+    				 													 
+						<fieldset>
+        			        <legend>Reside na Propriedade?</legend>
+        			        <input type="radio" name="radiobuttonSim" value="Sim" />
+        			        <label name="reside" method="post" action=" ">Sim</label>
+        			        <input type="radio" name="radiobuttonNao" value="Não" CHECKED />
+        			        <label name="reside" method="post" action=" ">Não</label>
+                        </fieldset >
+                     
+                        <fieldset>
+                     	   <legend>Fumante?</legend>
+                     	   <input type="radio" name="radiobuttonFSim" value="Sim" />
+                     	   <label name="fuma" method="post" action=" ">Sim</label>
+                     	   <input type="radio" name="radiobuttonFNão" value="Não" checked />
+                     	   <label name="fuma" method="post" action="">Não</label>
+                       </fieldset>
+                       
+                       <label><span>Foto da Propriedade:</span></label>
+                       <input type="file" id="imagem" method="post" action="" /> </br>
+                                         
+                       <input class="botao botao-azul" type="submit" name="Enviar" value="Enviar" />    				 
+    				   <input class="botao botao-azul" type="submit" name="Sair" value="Sair" />
+    				   <input class="botao botao-azul" type="reset"  name="LimparDados" value="Limpar" /> 
+
+                     </form> 
+
+			</div>
+			
+			<footer>
+				<p>
+				   <a href="../index.html">Início</a> | 
+				   <a href="../Quem-Somos/Quem-Somos.html">Quem Somos</a> | 
+			       <a href="../Fale-Conosco/Contato.html">Fale Conosco</a> 
+				   <span>&copy; Traveller's House 2011. by Marilene - Todos os direitos reservados.</span>				
+				</p>
+
+			</footer>
+		</div>
+	</body>
+</html>

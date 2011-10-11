@@ -1,0 +1,155 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+h1{
+	text-shadow: 3px 2px 3px #888;
+	color: white;
+    font-family:'Dancig Script',cursive;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+h1 a{
+	text-decoration: none;
+	color: white;
+}
+
+h1 a:hover{
+	text-decoration: none;
+}
+
+header{
+	padding: 30px;
+	background-color: pink;
+	border-radius:5px;
+	box-shadow: 2px 2px 3px #666666;
+	
+}
+section{
+	min-height: 465px;
+	padding: 20px;
+}
+
+form{
+	padding: 10px;
+}
+form input{
+	border: 1px solid black;
+	font-size: 12pt;
+	height: 12px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding: 7px;
+	width: 265px;
+	float: none;
+	margin-right: 10px; 
+}
+label span{
+	text-align: right;
+	font-weight: bold;
+	font-size: medium;
+	margin-right:5px;
+}
+
+/* Estilos do Rodape */
+footer{
+	border-radius: 5px;
+	background-color: pink;
+	box-shadow: 1px 1px 5px #888;	
+	padding: 15px;
+	color:#666666;
+	position: relative;
+}
+/* Posição do texto */
+footer span{
+	float: right;
+	position: relative;
+}
+/* Efeito ao se passar o mouse */
+footer a:hover{
+	color: black;
+	text-shadow: 2px 0px 3px #888;
+}
+
+#container{
+	margin: 5px;
+	padding: 5px;	
+}
+
+#container-Cadastro{
+	box-shadow: 1px 1px 5px #888;
+	border-radius: 10px;
+	height: 800px;
+	margin: 15px auto;
+	padding: 20px 20px 30px;
+	width: right; 
+	margin-left: 0px;
+	
+}
+
+fieldset{
+	box-shadow: 1px 1px 5px #888;
+	margin-top: 15px; 
+	padding: 10px;	
+}
+
+input[type="reset"]{
+	width: 80px;
+	margin-left: 145px;
+	box-shadow: 0px 0px 5px #00CCFF;
+	height: 37px;  
+}
+
+input[type="submit"]{
+	width: 80px;
+	margin-left: 5px;
+	box-shadow: 0px 0px 5px #00CCFF;
+	height: 37px;  
+}
+
+input[type="file"]{
+    height: 35px;
+    margin-left: 20px;
+    width: 332px; 
+    margin-top: 10px; 
+}
+
+.botao{
+	text-align: center;
+	text-decoration: none;
+	font: 14px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	padding: 8px 20px 8px;
+	font-size: 12pt;	
+}
+
+.botao-azul{
+	-webkit-gradient(linear, 0 0%, 0 100%, from(#00ADEE), to(#0078A5));
+	background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+    border: 1px solid #0076A3;
+    color: #D9EEF7;
+}
+
+.botao:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.botao:active{
+	position: relative;
+	top: 1px;
+}
+
+
