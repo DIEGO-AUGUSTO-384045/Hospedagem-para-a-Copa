@@ -232,4 +232,78 @@ footer a:hover{
 
 
 /* Estilos das Tabelas */
+.tabela1{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+    width: 100%;
+}
+
+
+#coluna-opcao{
+	width: 10%;
+}
+
+#coluna-endereco{
+	width: 70%;
+	
+}
+
+#coluna-ocupado{
+	width: 10%;
+}
+
+.tabela1 thead th{
+    padding:8px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.tabela1 tbody td{
+	font-size:12pt;
+    padding:5px;
+    text-align:left;
+    background-color:#DEF3CA;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+
+.icone-tabela{
+	height: 24px;
+    width: 24px;
+    margin:3px 5px 0 10px;
+    float:left;
+    position: relative;
+    border: none;
+}
+
 
