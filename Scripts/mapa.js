@@ -6,9 +6,7 @@ var mapa;
 var geocodificador;
 var marcador;
 
-$(document).ready(function(){
-	inicializa();
-});
+
 
 function inicializa () {
 	var coordenadas = pegaCoordenadas();
@@ -25,12 +23,18 @@ function inicializa () {
 } // Fim da função inicializa
 
 function codificaEndereco(){
+	
+	
+	alert('passei por aqui');
 	var endereco = document.getElementById("endereco").value;
 	
 	if (geocodificador) {
   	geocodificador.geocode( {'address':endereco}, function (resultados, status) {
   		
   		if(status == google.maps.GeocoderStatus.OK){
+  			
+  			atualizaCampos(resultados);
+
   			mapa.setCenter(resultados[0].geometry.location);
   			mapa.setZoom(25);
   			marcador = new google.maps.Marker({ 
@@ -81,6 +85,13 @@ function pegaCoordenadas(){
 	return new google.maps.LatLng(latitude, longitude);
 }
 
+
+
+function atualizaCampos (resultados) {
+	
+	document.getElementById("pais").value = resultados[0].types[3];
+  
+}
 
 
 
