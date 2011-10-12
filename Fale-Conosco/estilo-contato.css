@@ -42,16 +42,51 @@ section{
 	padding: 20px;
 }
 
+/* Estilos do Rodape */
 footer{
+	box-shadow: 1px 1px 5px #888;
+	background:white;
+	border-radius: 5px;
 	padding: 15px;
+	color:#666666;
+	
+}
+
+footer span{
+	float: right;
+	position: relative;
+}
+
+footer a:hover{
+	color: black;
+	text-shadow: 2px 0px 3px #888;
+}
+
+
+
+label{
+	font-weight: bold;
+}
+
+input{
 	border: 1px solid gray;
+	
+}
+
+#container{
+	margin: 5px;
+	padding: 5px;
 }
 
 form {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:585px;
+    background-color: #F5F5F5;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px #888888;
+    float: right;
+    height: 710px;
+    margin: 40px auto;
+    padding: 20px 20px 30px;
+    width: 575px;
 }
 	
 fieldset{

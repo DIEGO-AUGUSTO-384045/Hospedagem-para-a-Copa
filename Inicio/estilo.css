@@ -209,6 +209,15 @@ footer a:hover{
 	font-size: 12pt;
 }
 
+<<<<<<< HEAD
+#painel-pequeno{
+	min-height: 465px;
+	padding: 20px;
+	width: 100%;
+	margin:20px;
+}
+
+=======
 /* Estilos dos Botões */
 .botao-azul{
 	-webkit-gradient(linear, 0 0%, 0 100%, from(#00ADEE), to(#0078A5));
@@ -307,3 +316,4 @@ footer a:hover{
 }
 
 
+>>>>>>> f7f9a5e57c27f056a6be113fcd68957dc527f0f9
