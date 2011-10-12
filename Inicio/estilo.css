@@ -10,6 +10,10 @@ body {
 	background-color: #F8F8F8;
 }
 
+#container{
+	margin: 5px;
+	padding: 5px;
+}
 
 p{
 	text-align: justify;
@@ -85,7 +89,7 @@ figcaption{
 	height:25px;
 	width:100%;
 	color:#FFFFFF;
-	background-color:rgba(0, 0, 0, .7);
+	background-color:rgba(0, 0, 0, .6);
 	opacity:0;
 	position: absolute;
 	border-radius: 5px 5px 0 0;
@@ -117,6 +121,13 @@ figure{
 	display: block;
 }
 
+
+#painel-pequeno{
+	min-height: 465px;
+	padding: 20px;
+	width: 94%;
+	margin:20px
+}
 
 
 /* Estilos do menu de navegação */
@@ -154,32 +165,6 @@ nav a:hover{
     border: none;
 }
 
-.mensagens{
-	background: url('../Imagens/Ícones/mensagens.png') no-repeat;
-}
-
-.meus-imoveis{
-	background: url('../Imagens/Ícones/arquivo-hospedagem.png') no-repeat;
-}
-
-.minha-conta{
-	background: url('../Imagens/Ícones/usuario.png') no-repeat;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section{
 	min-height: 465px;
 	height:800px;
@@ -213,7 +198,38 @@ footer a:hover{
 	text-shadow: 2px 0px 3px #888;
 }
 
-#container{
-	margin: 5px;
-	padding: 5px;
+.botao{
+	text-align: center;
+	text-decoration: none;
+	font: 14px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	padding: 8px 20px 8px;
+	font-size: 12pt;
 }
+
+/* Estilos dos Botões */
+.botao-azul{
+	-webkit-gradient(linear, 0 0%, 0 100%, from(#00ADEE), to(#0078A5));
+	background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+    border: 1px solid #0076A3;
+    color: #D9EEF7;
+}
+
+.botao:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.botao:active{
+	position: relative;
+	border:1px solid;
+	top: 1px;
+}
+
+
+/* Estilos das Tabelas */
+
