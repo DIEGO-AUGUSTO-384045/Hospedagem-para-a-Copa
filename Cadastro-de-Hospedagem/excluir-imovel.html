@@ -4,16 +4,19 @@
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
 		<meta name="author" content="Diego Augusto" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 		
 		<title>Traveller's House</title>
 		
 		<link href="../Inicio/estilo.css" type="text/css" rel="stylesheet" />
+	    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Dancing+Script' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu|Dancing+Script' rel='stylesheet' type='text/css'>
+	    <script src="../Scripts/mapa.js" type="text/javascript"></script>
+	    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		
 		
 	</head>
-	<body>
+	<body onload="inicializa()">
 		<div id="container">
 			
 			<!--Início Cabeçalho-->
@@ -51,36 +54,40 @@
 			<section>
 				
 				
-				<header><a class="botao botao-azul" href="cadastro-de-hospedagens.html">Novo</a></header>
+				<header>
+					<h3>Você tem certeza que deseja excluir este imóvel?</h3>
+				</header>
 		        
 				
-				<article>
+				<article onload="codificaEndereco()">
+					<fieldset>
+						<legend>Informações do Imóvel</legend>
 					
+						<label>Endereço:</label>
+						<address id="endereco" ></address>
+						
+						
+						<label>Longitude:</label>
+						<input id="longitude" type="text" readonly="true" value="-4.0244759" />
+						
+						<label>Latitude:</label>
+						<input id="latitude" type="text" readonly="true" value="39.8567775" />
 					
+						
 					
+					</fieldset>
+					<fieldset>
+						<legend>Mapa</legend>
+						<div id="container-mapa">
+							
+						</div>
+					</fieldset>
 					
-					<table class="tabela1">
-						<thead>
-							<th id="coluna-opcao" scope="col" abbr="opc">Opções</th>
-							<th id="coluna-endereco" scope="col" abbr="end">Endereço</th>
-							<th id="coluna-ocupado" scope="col" abbr="pre">Ocupado?</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td scope="row">
-									<p>
-										<a><img src="../Imagens/Ícones/editar.png" class="icone-tabela" title="Editar"/></a>
-										<a href="excluir-imovel.html"><img src="../Imagens/Ícones/excluir.png" class="icone-tabela" title="Excluir" /></a>
-									</p>
-								</td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
 				</article>
-				
-				
+				<footer>
+					<a class="botao botao-azul" href="index.html">Voltar</a>
+					<input type="submit" value="Excluir" class="botao botao-azul" />
+				</footer>
 			</section>
 			
 			<!--Início Rodapé-->

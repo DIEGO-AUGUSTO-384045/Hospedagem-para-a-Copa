@@ -188,6 +188,19 @@ section header{
 	
 }
 
+
+section footer{
+	padding:15px 15px 15px 5px;
+	border: none;
+	background-color: white;
+	box-shadow: none;
+	margin-bottom:20px;
+}
+
+section footer a:hover{
+	color: #D9EEF7;
+}
+
 /* Estilos do Rodape */
 footer{
 	box-shadow: 1px 1px 5px #888;
@@ -244,15 +257,6 @@ footer a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
 #painel-pequeno{
 	min-height: 465px;
 	padding: 20px;
@@ -260,26 +264,6 @@ footer a:hover{
 	margin:20px;
 }
 
-/* Estilos dos Botões */
-.botao-azul{
-	-webkit-gradient(linear, 0 0%, 0 100%, from(#00ADEE), to(#0078A5));
-	background: -moz-linear-gradient(center top , #00ADEE, #0078A5) repeat scroll 0 0 transparent;
-	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
-    border: 1px solid #0076A3;
-    color: #D9EEF7;
-}
-
-.botao:hover{
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.botao:active{
-	position: relative;
-	border:1px solid;
-	top: 1px;
-}
 
 
 /* Estilos das Tabelas */
@@ -357,5 +341,49 @@ footer a:hover{
     border: none;
 }
 
+
+/* Estilos dos formularios */
+fieldset{
+	border: 1px solid blue;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+
+legend{
+	font-size:small; 
+}
+
+
+label{
+	font-weight: bold;
+}
+
+
+input[type='text']{
+	border: 1px solid black;
+	border-radius: 4px;
+	margin:5px;
+	padding: 4px;
+	font-size: medium;
+}
+
+
+address{
+	margin: 5px 5px 20px 5px;
+	padding: 5px;
+	width:89%;
+	position: relative;
+	float: right;
+}
+
+
+/* Estilos do Mapa*/
+#container-mapa{
+	width: 900px;
+	height:450px;
+	margin:5px auto 5px auto;
+}
 
 

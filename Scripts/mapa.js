@@ -13,9 +13,9 @@ function inicializa () {
 	geocodificador = new google.maps.Geocoder();
 	
 	var opcoes = {
-		zoom: 5,
+		zoom: 20,
 		center: coordenadas,
-		mapTypeId:google.maps.mapTypeId.ROADMAP
+		mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
 	
     mapa = new google.maps.Map(document.getElementById('container-mapa'), opcoes);
@@ -23,18 +23,12 @@ function inicializa () {
 } // Fim da função inicializa
 
 function codificaEndereco(){
-	
-	
-	alert('passei por aqui');
 	var endereco = document.getElementById("endereco").value;
 	
 	if (geocodificador) {
   	geocodificador.geocode( {'address':endereco}, function (resultados, status) {
   		
   		if(status == google.maps.GeocoderStatus.OK){
-  			
-  			atualizaCampos(resultados);
-
   			mapa.setCenter(resultados[0].geometry.location);
   			mapa.setZoom(25);
   			marcador = new google.maps.Marker({ 
@@ -45,7 +39,7 @@ function codificaEndereco(){
   		}
   		else
   		{
-  			alert("O geocodificador não completou a requisição devidao o seguinte motivo" + status);
+  			alert("O geocodificador não completou a requisição devidao o seguinte motivo  " + status);
   		}
   	});
   }
@@ -80,8 +74,8 @@ function codificaCoordenadas(){
 
 
 function pegaCoordenadas(){
-	var latitude = document.getElementById('latitude').value;
-	var longitude = document.getElementById('longitude').value;
+	var latitude = parseFloat(document.getElementById('latitude').value);
+	var longitude = parseFloat(document.getElementById('longitude').value);
 	return new google.maps.LatLng(latitude, longitude);
 }
 
