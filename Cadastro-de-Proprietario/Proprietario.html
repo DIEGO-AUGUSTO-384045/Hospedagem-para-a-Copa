@@ -34,7 +34,7 @@
     				 	<input type="text" name="textfield" maxlength=40 required="true"/> <br />
     				 
    					 	<fieldset>   					 	
-      						<legend>Endereço</legend>
+      						<legend><span>Endereço</span></legend>
       						<address>
       							<label name="rua" method="post" action="">Rua </label>
       							<input type="text" name="textfield" maxlength=30 required="true"/> 
@@ -55,12 +55,13 @@
       					   </address>
     				    </fieldset>
     				 													 
-						<fieldset>
+						<fieldset> 
         			        <legend>Reside na Propriedade?</legend>
         			        <input type="radio" name="radiobuttonSim" value="Sim" />
-        			        <label name="reside" method="post" action=" ">Sim</label>
+        			        <label name="reside" method="post" action=" "><span>Sim</span></label>
         			        <input type="radio" name="radiobuttonNao" value="Não" CHECKED />
-        			        <label name="reside" method="post" action=" ">Não</label>
+        			        <label name="reside" method="post" action=" "><span>Não</span></label>
+        			        </span>
                         </fieldset >
                      
                         <fieldset>
@@ -70,9 +71,15 @@
                      	   <input type="radio" name="radiobuttonFNão" value="Não" checked />
                      	   <label name="fuma" method="post" action="">Não</label>
                        </fieldset>
-                       
-                       <label><span>Foto da Propriedade:</span></label>
-                       <input type="file" id="imagem" method="post" action="" /> </br>
+                                              
+                       <fieldset>
+                       	  <legend>Upload das Imagens</legend>
+                      	 <label><span>Proprietário:</span></label>
+                       	 <input type="file" id="imagem" method="post" action="" /> </br>
+                                      
+                       	 <label><span>Propriedade:</span></label>
+                         <input type="file" id="imagem" method="post" action="" /> </br>
+                       </fieldset>
                                          
                        <input class="botao botao-azul" type="submit" name="Enviar" value="Enviar" />    				 
     				   <input class="botao botao-azul" type="submit" name="Sair" value="Sair" />

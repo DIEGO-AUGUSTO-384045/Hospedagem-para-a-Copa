@@ -9,6 +9,17 @@ body {
 	font-size: 12pt;
 }
 
+a{
+	text-decoration: none;
+	color:#666666;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: black;
+	text-shadow: 2px 0px 3px #888;
+}
+
 h1{
 	text-shadow: 3px 2px 3px #888;
 	color: white;
@@ -96,9 +107,14 @@ footer a:hover{
 }
 
 fieldset{
-	box-shadow: 1px 1px 5px #888;
+	border: 1px solid #888;
+	border-radius: 5px 5px 5px 5px;
 	margin-top: 15px; 
 	padding: 10px;	
+	text-align: left;
+	font-weight: bold;
+	font-size: medium;
+	margin-right:5px;
 }
 
 input[type="reset"]{
@@ -120,6 +136,7 @@ input[type="file"]{
     margin-left: 20px;
     width: 332px; 
     margin-top: 10px; 
+    margin-bottom: 10px;
 }
 
 .botao{
@@ -130,7 +147,8 @@ input[type="file"]{
 	border-radius: 8px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 	padding: 8px 20px 8px;
-	font-size: 12pt;	
+	font-size: 12pt;
+	margin-top: 25px;	
 }
 
 .botao-azul{
