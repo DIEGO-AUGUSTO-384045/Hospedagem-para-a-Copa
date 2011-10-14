@@ -61,7 +61,8 @@ form input{
 	padding: 7px;
 	width: 265px;
 	float: none;
-	margin-right: 10px; 
+	margin-right: 10px;
+	border-radius:5px 
 }
 label span{
 	text-align: right;
