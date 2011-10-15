@@ -185,7 +185,8 @@ nav a:hover{
 
 section{
 	min-height: 465px;
-	height:845px;
+	min-height:845px;
+	height:auto;
 	width:939px;
 	padding: 20px;
 	margin:  20px 10px 20px 20px;
@@ -213,6 +214,12 @@ section footer{
 	background-color: white;
 	box-shadow: none;
 	margin-bottom:20px;
+	padding: 0;
+	margin: 0;
+}
+
+footer input{
+	margin: 0;
 }
 
 section footer a:hover{
@@ -377,10 +384,25 @@ legend{
 
 label{
 	font-weight: bold;
+	margin: 4px;
+}
+
+
+
+input{
+	margin: 5px 5px 10px 4px;
 }
 
 
 input[type='text']{
+	border: 1px solid black;
+	border-radius: 4px;
+	margin:5px;
+	padding: 4px;
+	font-size: medium;
+}
+
+input[type='date']{
 	border: 1px solid black;
 	border-radius: 4px;
 	margin:5px;
@@ -397,6 +419,30 @@ address{
 	float: right;
 }
 
+
+.nome{
+	width: 90%;
+}
+
+.longtitude{
+	width:22%;
+}
+
+.latitude{
+	width: 22%;
+}
+
+.area{
+	width: 23%;
+}
+
+.habitantes{
+	width: 23%;
+}
+
+.fundacao{
+	width: 16%;
+}
 
 /* Estilos do Mapa*/
 #container-mapa{
