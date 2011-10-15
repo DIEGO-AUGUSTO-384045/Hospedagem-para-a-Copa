@@ -3,76 +3,125 @@
 	<head>
 		<meta name="description" content="" />
 		<meta name="author" content="Silmara Lopes" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	     
 		<title>Cidades</title>
-		
-		<link href="estilo-cidades.css" type="text/css" rel="stylesheet" />
 
-      <head>
-	    <link href="../Inicio/estilo.css" type="text/css" rel="stylesheet" />	
+	     <link href="../Estilos/estilo.css" type="text/css" rel="stylesheet" />	
+	     
 		 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
   		 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-  		 <script src="Scripts/mapa.js" type="text/javascript"> </script>
+  		 <script src="../Scripts/mapa.js" type="text/javascript"> </script>
 
 	</head>
-	<body>
+	<body onload="inicializa()">
 		<div id="container">
 			
 			<header>
 				<h1>Cadastro de Cidades</h1>
 			</header>
-		
-		<div id="container-Informacao" class="Informacao">
-                	
-        	<h3>Incluir nova cidade</h3>
-            <form>
-		    	<label><span>Nome:</span></label>
-		    	<input type="text" id="nome" />
+			
+				<!--Início Barra Lateral-->
+			<aside>
+				<h2>Nome Usuário</h2>
+				<figure>
+					<img src="../Imagens/Ícones/foto-usuario.png" alt="Nome Usuário" />
+				</figure>
+				<nav>
+					<p>
+						<img src="../Imagens/Ícones/mensagens.png" class="icone-menu" />
+						<a>  Mensagens (0)</a>
+					</p>
+					<p>
+						<img src="../Imagens/Ícones/arquivo-hospedagem.png"  class="icone-menu" />
+						<a href="../Cadastro-de-Hospedagem/index.html">Meus Imóveis</a>	
+					</p>
+					<p>
+						<img src="../Imagens/Ícones/usuario.png" class="icone-menu" />
+						<a>Minha Conta</a>
+					</p>
+					<p>
+						<img src="../Imagens/Ícones/sair.png" class="icone-menu" />
+						<a>Sair</a>	
+					</p>
+				</nav>
+			</aside>
+			
+			
+			<section>
+				<article>
+					<header>
+						<h3>Cadastrar Cidade</h3>
+					</header>
+				<fieldset>
+					<legend>Informações</legend>
+            		<form>
+		    			<label><span>Nome:</span></label>
+		    			<input type="text" id="nome" class="nome" onchange="codificaNomeCidade()" />
 		    		
-		    	<label><span>Fundação:</span></label>
-		    	<input type="text" id="fundacao" />
+		    			<label><span>Fundação:</span></label>
+		    			<input type="date" id="fundacao" class="fundacao"/>
 		    			
-		    	<label><span>Área:</span></label>
-		    	<input type="text" id="area" />
+		    			<label><span>Área:</span></label>
+		    			<input type="text" id="area" class="area" />
 		    			
-		    	<label><span>Habitantes:</span></label>
-		    	<input type="text" id="habitantes" />
 		    			
-		    	<label><span>Altitude:</span></label>
-		    	<input type="text" id="altitude" />
+		    			<label><span>Habitantes:</span></label>
+		    			<input type="text" id="habitantes" class="habitantes"/>
 		    			
-		    	<label><span>Longitude:</span></label>
-		    	<input type="text" id="longitude" />
+		    			<br />
 		    			
-		    	<label><span>Latitude:</span></label>
-		    	<input type="text" id="latitude" />
+		    			
+		    			<label><span>Altitude:</span></label>
+		    			<input type="text" id="altitude" />
+		    			
+		    			<label><span>Longitude:</span></label>
+		    			<input type="text" id="longitude" class="longtitude" />
+		    			
+		    			<label><span>Latitude:</span></label>
+		    			<input type="text" id="latitude" class="latitude"  />
+		    			
+		    			<br />
 		    	
-		    	<label><span>Imagem:</span></label>
-		    	<input type="file" id="imagem" />
-		    	
-		    	<input class="botao botao-azul" type="reset" value="Limpar" />
-		        <input class="botao botao-azul" type="submit" value="Salvar" />
-		    
-		    </form>
-           </div>
-					
+		    			<label><span>Imagem:</span></label>
+		    			<input type="file" id="imagem" />
+		    		</form>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Mapa</legend>
+					<div id="container-mapa">
+						
+					</div>
+				</fieldset>
+
+		        </article>
+		        
+		        <footer>
+		        	<input class="botao botao-azul" type="reset" value="Limpar" />
+		        	<input class="botao botao-azul" type="submit" value="Salvar" />
+		        </footer>
+								
+			</section>
+				
 			<footer>
 				<p>
-				   <a href="../index.html">Início</a> | 
+				   <a href="../Inicio/index.html">Início</a> | 
 				   <a href="../Quem-Somos/Quem-Somos.html">Quem Somos</a> | 
 			       <a href="../Fale-Conosco/Contato.html">Fale Conosco</a> 
 				   <span>&copy; Traveller's House 2011. Todos os direitos reservados.</span>
 			    </p>
-			    <!-- 
-					  Cidades.html
-					  Hospedagem-para-a-Copa
-											 Created by Silmara on 2011-10-10.
-					  Copyright 2011 Silmara. All rights reserved.
-				 -->
-				
+			
 			</footer>
 		</div>
 	</body>
 </html>
+
+<!-- 
+	Cidades.html
+	Hospedagem-para-a-Copa
+	Created by Silmara on 2011-10-10.
+	Copyright 2011 Silmara. All rights reserved.
+-->
+				
