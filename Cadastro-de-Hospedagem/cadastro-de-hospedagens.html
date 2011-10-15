@@ -1,93 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
-		<meta name="author" content="Elaine dos Santos" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-		
+		<meta name="author" content="Diego Augusto" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 		
 		<title>Cadastro de Hospedagem</title>
 		
-		<link href= hospedagens.css type="text/css" rel="stylesheet" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+		<link href="../Inicio/estilo.css" type="text/css" rel="stylesheet" />
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu|Dancing+Script' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	    <script src="../Scripts/mapa.js" type="text/javascript"></script>
+	    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		
 		
 	</head>
-	<body>
-		<div>
-			<div id="container">
-				<header>
-					<h1><a href="/index.html">Informações da Hospedagem</a></h1>
-				</header>
-				<aside>
-					<figure>
-						<figcaption>Nome Usuário</figcaption>
-						<img src="../Imagens/Ícones/usuario.png" alt="Nome Usuário" />
-					</figure>
-					<a>Mensagens (0)</a>
-			    </aside>
+	<body onload="inicializa()">
+		<div id="container">
+			
+			<!--Início Cabeçalho-->
+			<header>
+				<h1><a href="../Inicio/index.html">Traveller's House</a></h1>
+			</header>
+			
+			<!--Início Barra Lateral-->
+			<aside>
+				<h2>Nome Usuário</h2>
+				<figure>
+					<figcaption><a>Alterar Foto</a></figcaption>
+					<img src="../Imagens/Ícones/foto-usuario.png" alt="Nome Usuário" />
+				</figure>
+				<nav>
+					<p>
+						<img src="../Imagens/Ícones/mensagens.png" class="icone-menu" />
+						<a>  Mensagens (0)</a>
+					</p>
+					<p>
+						<img src="../Imagens/Ícones/arquivo-hospedagem.png"  class="icone-menu" />
+						<a href="index.html">Meus Imóveis</a>	
+					</p>
+					<p>
+						<img src="../Imagens/Ícones/usuario.png" class="icone-menu" />
+						<a>Minha Conta</a>
+					</p>
+					<p>
+						<img src="../Imagens/Ícones/sair.png" class="icone-menu" />
+						<a>Sair</a>	
+					</p>
+				</nav>
+			</aside>
+			
 				<section>
-					
-				<!--Início Caixa de de características da hospedagem-->
-		    	<div id="caixa-hospedagem">
-		    		
-		    		<form>
-		    			<input type="radio" value="Moro na Propriedade" name="sexo">
-		    			Moro na Propriedade
-		    			<br />
-		    			<input type="radio" value="Não moro na Propriedade" name="sexo">
-		    			Não moro na Propriedade
-		    			
-		    			<br />
-		    			<br />
-		    			<label><span>Nome:</span></label>
-		    			<input type="text" id="nome" />
-		    		
-		    		<!--<label><span>Fundação:</span></label>
-		    		<input type="text" id="fundacao" />
-		    			
-		    		<label><span>Área:</span></label>
-		    		<input type="text" id="area" />
-		    			
-		    		<label><span>Habitantes:</span></label>
-		    		<input type="text" id="habitantes" />
-		    			
-		   		 	<label><span>Altitude:</span></label>
-		 	  	 	<input type="text" id="altitude" />
-		    			
-		   	 		<label><span>Longitude:</span></label>
-		    		<input type="text" id="longitude" />
-		    			
-		    		<label><span>Latitude:</span></label>
-		    		<input type="text" id="latitude" />
-		    		
-		    		<label><span>Imagem:</span></label>
-		    		<input type="file" id="imagem" />
-		    	
-		    		<input class="botao botao-azul" type="reset" value="Limpar" />
-		        	<input class="botao botao-azul" type="submit" value="Salvar" />
-		    
-		    </form>
-		    !-->
-		    		</div>
 				
-				</section>	
-		    </div>
+				
+				<header>
+					<h3>Cadastrar Hospedagem</h3>
+				</header>
+		        
+				<!--Início Caixa de Localização-->
+				<article onload="codificaEndereco()">
+					<fieldset>
+						<legend>Informações do novo Imóvel</legend>
+		    	
+
+		    				<address>
+
+   								<label name="rua" method="post" action="">Rua </label>
+      							<input type="text" name="textfield" maxlength=30 required="true"/>
+
+      							<label name="numero" method="post" action="">Número </label>
+      							<input type="text" name="textfield" maxlength=4 required="true" />
+
+      							<label name="complemento" method="post" action="">Complemento</label>
+      							<input type="text" name="textfield" maxlength=20 required="true"/> <br/>
+
+      							<label name="bairro" method="post" action="">Bairro </label>
+      							<input type="text" name="textfield" maxlength=15  required="true"/>
+
+      							<label name="cidade" method="post" action="">Cidade </label>
+      							<input type="text" name="textfield" maxlength=15 required="true"/>
+
+      							<label name="cep" method="post" action="">CEP </label>
+      							<input type="text" name="textfield" maxlength=8 required="true"/> <br/>
+
+      							<label name="estado" method="post" action"">Estado </label>
+      							<input type="text" name="textfield" maxlenght=2 required="true" />
+
+      							<label name="pais" method="post" action="">Pais</label>
+      							<input type="text" name="textfield" maxlength=10 required="true"/> <br/>
+
+      							<label><span>Imagem:</span></label>
+		    					<input type="file" id="imagem" /> <br />
+
+		    					<input class="botao botao-azul" type="reset" value="Limpar" />
+		    			    	<input class="botao botao-azul" type="submit" value="Salvar" />
+
+		    			   </address>
+
+    				   </fieldset>
+
+    				   <fieldset>
+
+		    				<legend>Mapa</legend>
+
+		    					<div id="container-mapa">
+							
+						</div>  				
+	    				
+
+		    	       </fieldset>
+
+		    	
+		   		</div>
+
+			</div>
+
+		
+
+					<!-- cadastro-de-cidades.html
+
+					Hospedagem-para-a-Copa
+
+										Created by Elaine dos Santos on 2011-10-10.
+
+					Copyright 2011 Elaine dos Santos. All rights reserved.
+
+				-->
+
+			<!--Início Rodapé-->
 			<footer>
 				<p>
-				   <a href="/index.html">Início</a> | 
-				   <a href="/Quem-Somos/Quem-Somos.html">Quem Somos</a> | 
-			       <a href="/Fale-Conosco/Contato.html">Fale Conosco</a> 
-				   <span>&copy; Traveller's House 2011. Todos os direitos reservervados.</span>
+				   <a href="index.html">Início</a> | 
+				   <a href="../Quem-Somos/Quem-Somos.html">Quem Somos</a> | 
+			       <a href="../Fale-Conosco/Contato.html">Fale Conosco</a> 
+				   <span>&copy; Traveller's House 2011. Todos os direitos reservados.</span>
 			    </p>
-				<!-- 
-					cadastro-de-cidades.html
-					Hospedagem-para-a-Copa
-										Created by Elaine dos Santos on 2011-10-10.
-					Copyright 2011 Elaine dos Santos. All rights reserved.
-				-->
 			</footer>
+
 		</div>
 	</body>
 </html>
+

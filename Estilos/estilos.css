@@ -31,15 +31,15 @@ h1{
 h1 a{
 	text-decoration: none;
 	color: white;
-	margin-left: 140px;
 }
 
 h1 a:hover{
 	text-decoration: none;
 }
 
+
 header{
-	padding: 10px;
+	padding: 30px;
 	background-color: #1E90FF;
 	border-radius:5px;
 	box-shadow: 2px 2px 3px #666666;
@@ -95,22 +95,23 @@ div#caixa-de-opcao{
 	height: 220px;
 	float:right;
 	margin-top:65px;
-	padding:55px;
+	padding:25px;
 	background-color: #F5F5F5;;	
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px #888;
 }
 
 div#opcao1{
-padding: 15px;
-margin-top: 5px;
+    margin-left: 16px;
+    margin-top: 10px;
+    padding: 6px;
 }
 
 
 div#opcao2{
-padding: 15px;
-margin-top: 58px;
-
+    margin-left: 16px;
+    margin-top: 30px;
+    padding: 6px;
 }
 
 #formulario form{
@@ -140,8 +141,9 @@ margin-top: 58px;
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
     border: 1px solid #0076A3;
     color: #D9EEF7;
-    margin-left: 93px;
+    margin-left: 80px;
     width: 80px;
+    margin-top: 10px;
   
 }
 
@@ -153,6 +155,47 @@ margin-top: 58px;
 .botao:active{
 	position: relative;
 	top: 1px;
+}
+
+/* Estilos do container-slides */
+#s3slider{
+	width: 675px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin: 30px auto 10px 10px;
+	box-shadow: 2px 2px 4px #888;
+	
+}
+
+#s3sliderContent{
+	width: 675px;
+	position: absolute;
+	top:0px;
+	margin-left: 0px;
+}
+
+.s3sliderImage{
+	float: left;
+	position: relative;
+	display: none;
+}
+
+.s3sliderImage span{
+	position: absolute;
+	left: 0;
+	padding: 10px 13px;
+	width: 675px;
+	background-color: #000;
+	opacity: 0.8;
+	color: #FFFFFF;
+	display: none;
+	bottom: 0;
+}
+
+.clear{
+	clear: both;
 }
 
 /* Estilos Rodape */
