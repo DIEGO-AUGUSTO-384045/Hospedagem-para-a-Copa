@@ -167,7 +167,7 @@ nav a:hover{
 
 section{
 	min-height: 465px;
-	height:845px;
+	height:1000px;
 	width:939px;
 	padding: 20px;
 	margin:  20px 10px 20px 20px;
@@ -364,18 +364,19 @@ label{
 
 
 input[type='text']{
-	border: 1px solid black;
+	border: 1px solid gray;
 	border-radius: 4px;
 	margin:5px;
 	padding: 4px;
 	font-size: medium;
+	width: 500px;
 }
 
 
 address{
 	margin: 5px 5px 20px 5px;
 	padding: 5px;
-	width:89%;
+	width:65%;
 	position: relative;
 	float: right;
 }
@@ -387,5 +388,96 @@ address{
 	height:450px;
 	margin:5px auto 5px auto;
 }
+
+.imagem-hospedagem{
+	border: 1px solid black;
+	height: 20px;
+	width: 20px;
+}
+
+ul{
+	margin-left: 30px;
+	padding: 10px;
+}
+
+#caixa-de-descricao{
+	border: 1px solid black;
+    box-shadow: 2px 2px 4px #888888;
+    float: left;
+    height: 260px;
+    margin: 30px auto 10px 65px;
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+}
+
+/* Estilos do Imagem-hospedagem */
+#imagem-hospedagem{
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px #888888;
+    float: left;
+    height: 193px;
+    margin: -218px auto 10px 25px;
+    overflow: hidden;
+    position: relative;
+    width: 278px;
+}
+
+
+#s3sliderContent{
+	width: 675px;
+	position: relative;
+	top:1px;
+	margin-left: 0px;
+}
+
+.s3sliderImage{
+	float: left;
+	position: relative;
+	display: none;
+}
+
+.s3sliderImage span{
+	position: absolute;
+	left: 0;
+	padding: 10px 13px;
+	width: 675px;
+	background-color: #000;
+	opacity: 0.8;
+	color: #FFFFFF;
+	display: none;
+	bottom: 0;
+}
+
+ul{
+	margin-left: 30px;
+	padding: 10px;
+}
+
+#descricao{
+	border: 1px solid window;
+    float: right;
+    height: 180px;
+    line-height: 150%;
+    margin: 40px 28px 10px 10px;
+    position: relative;
+    text-align: justify;
+    width: 435px;
+}
+
+.visualizar {
+    color: #666666;
+    margin: 115px 37px 32px 708px;
+    text-decoration: none;
+}
+
+.filtro{
+	border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    padding: 4px;
+    width: 170px;
+}
+
 
 

@@ -416,11 +416,11 @@ input[type='date']{
 
 
 address{
-	margin: 5px 5px 20px 5px;
-	padding: 5px;
-	width:89%;
-	position: relative;
-	float: right;
+	 float: right;
+    margin: 5px 5px 20px;
+    padding: 5px;
+    position: relative;
+    width: 99%;
 }
 
 
@@ -479,6 +479,14 @@ address{
 
 .cep{
 	width: 25%;
+}
+
+.tipo-de-hospedagem{
+	border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    padding: 4px;
+    width: 170px;
 }
 
 /* Estilos do Mapa*/
