@@ -25,13 +25,30 @@ function inicializa () {
 function codificaEndereco(){
 	
 	var endereco = pegaEndereco();
+	geocodificador = new google.maps.Geocoder();
 	
 	if (geocodificador) {
-  	geocodificador.geocode( {'address':endereco}, function (resultados, status) {
+  		geocodificador.geocode( {'address':endereco}, function (resultados, status) {
   		
   		if(status == google.maps.GeocoderStatus.OK){
-  			mapa.setCenter(resultados[0].geometry.location);
-  			mapa.setZoom(25);
+  			
+  			var coordenadas = resultados[0].geometry.location;
+  			
+  		   
+  		   atualizaCoordenadas(coordenadas);
+  		   
+  		   alert(resultados[0].types.country)
+  		   
+  		   //document.getElementById('pais').value = resultados[0].types.country;
+  			
+  			
+  			var opcoes = {
+				zoom: 25,
+				center: resultados[0].geometry.location,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+	
+    		mapa = new google.maps.Map(document.getElementById('container-mapa'), opcoes);
   			marcador = new google.maps.Marker({ 
   				map:mapa,
   			    draggable: true,
@@ -47,17 +64,6 @@ function codificaEndereco(){
 }
 
 
-function pegaEndereco (argument) {
-	
-	var endereco = document.getElementById("endereco").value;
-	
-	
-		
-		
-	return endereco;
-  
-}
-
 function codificaNomeCidade () {
 
     var endereco = endereco = document.getElementById("nome").value;
@@ -70,7 +76,9 @@ function codificaNomeCidade () {
 
   		   var coordenadas = resultados[0].geometry.location;
   		   
+  		 
   		   atualizaCoordenadas(coordenadas);
+  		  
 
 			var opcoes = {
 				zoom: 25,
@@ -94,6 +102,10 @@ function codificaNomeCidade () {
   	
 }
 
+
+function pegaEndereco (argument) {
+  	return document.getElementById('endereco').value;
+}
 
 function codificaCoordenadas(){
 	
@@ -130,20 +142,15 @@ function pegaCoordenadas(){
 
 
 function atualizaCoordenadas (coordenadas) {
-	
-	
 	latlng = coordenadas.toString().split(",", 2);
-  		   
-  
-  		   document.getElementById('latitude').value = latlng[0].substring(1);
-  		   document.getElementById('longitude').value = latlng[1].substring(0, latlng[1].length - 1);
-  		   
-	
-  
+    document.getElementById('latitude').value = latlng[0].substring(1);
+    document.getElementById('longitude').value = latlng[1].substring(0, latlng[1].length - 1);
 }
 
 
 function atualizaCampos (resultados) {
+	
+	alert('passei por aqui');
 	
 	document.getElementById("pais").value = resultados[0].types[3];
   

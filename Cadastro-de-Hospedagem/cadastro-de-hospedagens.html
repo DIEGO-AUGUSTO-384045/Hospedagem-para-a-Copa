@@ -53,82 +53,71 @@
 				</nav>
 			</aside>
 			
-				<section>
-				
-				
+			<section>
+		
 				<header>
 					<h3>Cadastrar Hospedagem</h3>
 				</header>
 		        
-				<!--Início Caixa de Localização-->
-				<article onload="codificaEndereco()">
+				<article>
 					<fieldset>
-						<legend>Informações do novo Imóvel</legend>
+						<legend>Informações</legend>
+						
+   							<label>Endereço</label>
+      						<input id="endereco" type="text"  required="true" class="endereco" onchange="codificaEndereco()" />
+
+      						<label>Número </label>
+      						<input id="numero" type="text" maxlength=4 required="true" class="numero" />
+
+      						<label>Complemento</label>
+      						<input id="complemento" type="text" maxlength=20 required="true" class="complemento" />
+
+      						<label>Bairro</label>
+      						<input id="bairro" type="text" name="textfield" maxlength=15  required="true" class="bairro"/>
+
+      						<label>Cidade </label>
+      						<input id="cidade" type="text" maxlength=15 required="true" class="cidade" />
+
+      						<label>Estado</label>
+      						<input id="estado" type="text" maxlenght=2 required="true" class="estado" />
+
+      						<label>País</label>
+      						<input id="pais" type="text" required="true" class="pais" /> 
+      						<br />
+      						
+      						<label>CEP </label>
+      						<input id="cep" type="text" maxlength=8 required="true" class="cep" />
+      						
+      						<label>Latitude</label>
+      						<input id="latitude" type="text" maxlength=8 required="true" class="latitude" />
+      						
+      						<label>Longitude</label>
+      						<input id="longitude" type="text" maxlength=8 required="true" class="longtitude" />
+
+      						<label>Imagem</label>
+		    				<input type="file" id="imagem" />
 		    	
+    				</fieldset>
 
-		    				<address>
+    				<fieldset>
 
-   								<label name="rua" method="post" action="">Rua </label>
-      							<input type="text" name="textfield" maxlength=30 required="true"/>
+		    			<legend>Mapa</legend>
 
-      							<label name="numero" method="post" action="">Número </label>
-      							<input type="text" name="textfield" maxlength=4 required="true" />
-
-      							<label name="complemento" method="post" action="">Complemento</label>
-      							<input type="text" name="textfield" maxlength=20 required="true"/> <br/>
-
-      							<label name="bairro" method="post" action="">Bairro </label>
-      							<input type="text" name="textfield" maxlength=15  required="true"/>
-
-      							<label name="cidade" method="post" action="">Cidade </label>
-      							<input type="text" name="textfield" maxlength=15 required="true"/>
-
-      							<label name="cep" method="post" action="">CEP </label>
-      							<input type="text" name="textfield" maxlength=8 required="true"/> <br/>
-
-      							<label name="estado" method="post" action"">Estado </label>
-      							<input type="text" name="textfield" maxlenght=2 required="true" />
-
-      							<label name="pais" method="post" action="">Pais</label>
-      							<input type="text" name="textfield" maxlength=10 required="true"/> <br/>
-
-      							<label><span>Imagem:</span></label>
-		    					<input type="file" id="imagem" /> <br />
-
-		    					<input class="botao botao-azul" type="reset" value="Limpar" />
-		    			    	<input class="botao botao-azul" type="submit" value="Salvar" />
-
-		    			   </address>
-
-    				   </fieldset>
-
-    				   <fieldset>
-
-		    				<legend>Mapa</legend>
-
-		    					<div id="container-mapa">
+		    			<div id="container-mapa">
 							
 						</div>  				
 	    				
 
-		    	       </fieldset>
+		    	    </fieldset>
+		    	    
+				</article>
+		    	<footer>
+		    		<input class="botao botao-azul" type="reset" value="Limpar" />
+		    		<input class="botao botao-azul" type="submit" value="Salvar" />
+		    	</footer>
+		   	</section>
 
-		    	
-		   		</div>
-
-			</div>
-
-		
-
-					<!-- cadastro-de-cidades.html
-
-					Hospedagem-para-a-Copa
-
-										Created by Elaine dos Santos on 2011-10-10.
-
-					Copyright 2011 Elaine dos Santos. All rights reserved.
-
-				-->
+			
 
 			<!--Início Rodapé-->
 			<footer>
@@ -144,3 +133,10 @@
 	</body>
 </html>
 
+<!-- cadastro-de-cidades.html
+
+	Hospedagem-para-a-Copa
+	Created by Elaine dos Santos on 2011-10-10.
+	Copyright 2011 Elaine dos Santos. All rights reserved.
+
+-->
