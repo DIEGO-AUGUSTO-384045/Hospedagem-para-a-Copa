@@ -167,7 +167,7 @@ nav a:hover{
 
 section{
 	min-height: 465px;
-	height:845px;
+	height:1000px;
 	width:939px;
 	padding: 20px;
 	margin:  20px 10px 20px 20px;
@@ -376,7 +376,7 @@ input[type='text']{
 address{
 	margin: 5px 5px 20px 5px;
 	padding: 5px;
-	width:89%;
+	width:65%;
 	position: relative;
 	float: right;
 }
@@ -405,7 +405,7 @@ ul{
     box-shadow: 2px 2px 4px #888888;
     float: left;
     height: 260px;
-    margin: 30px auto 10px 10px;
+    margin: 30px auto 10px 65px;
     overflow: hidden;
     position: relative;
     width: 800px;
