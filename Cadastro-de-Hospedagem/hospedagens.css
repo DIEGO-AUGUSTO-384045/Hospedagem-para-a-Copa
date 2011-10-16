@@ -185,3 +185,19 @@ footer span{
 footer a:hover{
 	color: black;
 }
+
+.tipo-de-hospedagem{
+	border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    padding: 4px;
+    width: 170px;
+}
+
+address {
+    float: right;
+    margin: 5px 5px 20px;
+    padding: 5px;
+    position: relative;
+    width: 99%;
+}
