@@ -34,13 +34,8 @@ function codificaEndereco(){
   			
   			var coordenadas = resultados[0].geometry.location;
   			
-  		   
   		   atualizaCoordenadas(coordenadas);
   		   
-  		   alert(resultados[0].types.country)
-  		   
-  		   //document.getElementById('pais').value = resultados[0].types.country;
-  			
   			
   			var opcoes = {
 				zoom: 25,
