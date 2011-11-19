@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HospedagemParaACopa</title>
+  <title>Traveller's House</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="container">
+		<!--Início do Cabeçalho-->
+		<header>
+			<h1><a href="index.html">Traveller's House</a></h1>
+		</header>
+		
+		<div>
+			<%= yield %>
+		</div>
+		
+		<!--Início do Rodapé -->
+		<footer>
+			<p>
+				<a href="../index.html">Início</a> | 
+				<a href="../Quem-Somos/Quem-Somos.html">Quem Somos</a> | 
+			    <a href="../Fale-Conosco/Contato.html">Fale Conosco</a> 
+				<span>&copy; Traveller's House 2011. Todos os direitos reservados.</span>
+			</p>
+		</footer>
 
-<%= yield %>
-
+		
+		
+	</div>
 </body>
 </html>
