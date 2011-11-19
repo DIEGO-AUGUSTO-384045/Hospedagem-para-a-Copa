@@ -5,6 +5,7 @@
 	<projects>
 	</projects>
 	<buildSpec>
+<<<<<<< HEAD
 		<buildCommand>
 			<name>com.aptana.ide.core.unifiedBuilder</name>
 			<arguments>
@@ -14,5 +15,9 @@
 	<natures>
 		<nature>org.radrails.rails.core.railsnature</nature>
 		<nature>com.aptana.ruby.core.rubynature</nature>
+=======
+	</buildSpec>
+	<natures>
+>>>>>>> c5e1bd5e78232aaf15eb986e71d8f0996ef91973
 	</natures>
 </projectDescription>
