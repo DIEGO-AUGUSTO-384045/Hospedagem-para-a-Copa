@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Valor:</b>
+  <%= @imovel.valor %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @imovel.endereco %>
+</p>
+
+<p>
+  <b>Qtde comodos:</b>
+  <%= @imovel.qtde_comodos %>
+</p>
+
+<p>
+  <b>Foto imovel:</b>
+  <%= @imovel.Foto_Imovel %>
+</p>
+
+<p>
+  <b>Cidade:</b>
+  <%= @imovel.Cidade %>
+</p>
+
+
+<%= link_to 'Edit', edit_imovel_path(@imovel) %> |
+<%= link_to 'Back', imovels_path %>

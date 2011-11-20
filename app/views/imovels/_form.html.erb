@@ -1,0 +1,37 @@
+<%= form_for(@imovel) do |f| %>
+  <% if @imovel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@imovel.errors.count, "error") %> prohibited this imovel from being saved:</h2>
+
+      <ul>
+      <% @imovel.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :valor %><br />
+    <%= f.text_field :valor %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :qtde_comodos %><br />
+    <%= f.number_field :qtde_comodos %>
+  </div>
+  <div class="field">
+    <%= f.label :Foto_Imovel %><br />
+    <%= f.text_field :Foto_Imovel %>
+  </div>
+  <div class="field">
+    <%= f.label :Cidade %><br />
+    <%= f.text_field :Cidade %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

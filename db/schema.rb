@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111120150507) do
+ActiveRecord::Schema.define(:version => 20111120181845) do
 
   create_table "cidades", :force => true do |t|
     t.string   "nome",          :limit => 50, :null => false
@@ -27,6 +27,22 @@ ActiveRecord::Schema.define(:version => 20111120150507) do
 
   create_table "foto_cidades", :force => true do |t|
     t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "foto_imovels", :force => true do |t|
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "imovels", :force => true do |t|
+    t.float    "valor"
+    t.string   "endereco"
+    t.integer  "qtde_comodos"
+    t.integer  "Foto_Imovel_id"
+    t.integer  "Cidade_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

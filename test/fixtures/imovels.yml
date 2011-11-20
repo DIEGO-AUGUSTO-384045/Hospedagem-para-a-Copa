@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  valor: 1.5
+  endereco: MyString
+  qtde_comodos: 1
+  Foto_Imovel: 
+  Cidade: 
+
+two:
+  valor: 1.5
+  endereco: MyString
+  qtde_comodos: 1
+  Foto_Imovel: 
+  Cidade: 

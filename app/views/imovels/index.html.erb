@@ -1,0 +1,31 @@
+<h1>Listing imovels</h1>
+
+<table>
+  <tr>
+    <th>Valor</th>
+    <th>Endereco</th>
+    <th>Qtde comodos</th>
+    <th>Foto imovel</th>
+    <th>Cidade</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @imovels.each do |imovel| %>
+  <tr>
+    <td><%= imovel.valor %></td>
+    <td><%= imovel.endereco %></td>
+    <td><%= imovel.qtde_comodos %></td>
+    <td><%= imovel.Foto_Imovel %></td>
+    <td><%= imovel.Cidade %></td>
+    <td><%= link_to 'Show', imovel %></td>
+    <td><%= link_to 'Edit', edit_imovel_path(imovel) %></td>
+    <td><%= link_to 'Destroy', imovel, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Imovel', new_imovel_path %>
