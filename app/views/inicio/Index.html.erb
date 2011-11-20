@@ -1,78 +1,34 @@
-<div class="conteudo-inicio">
-				
-				<!-- Início da caixa de Slides -->
-				<div id="s3slider">
-					<ul id="s3sliderContent">
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Belo Horizonte.jpg" %>
-							<span>Belo Horizonte</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Brasília.jpg" %>
-							<span>Brasília</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Cuiabá.jpg" %>
-							<span>Cuiabá</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Curitiba.jpg" %>
-							<span>Curitiba</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Fortaleza.jpg" %>
-							<span>Fortaleza</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Manaus.jpg" %>
-							<span>Manaus</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Natal.jpg" %>
-							<span>Natal</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Porto Alegre.jpg" %>
-							<span>Porto Alegre</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Recife.jpg" %>
-							<span>Recife</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Rio de Janeiro.jpg" %>
-							<span>Rio de Janeiro</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/Salvador.jpg" %>
-							<span>Salvador</span>
-						</li>
-						<li class="s3sliderImage">
-							<%= image_tag "Cidades-da-Copa/São Paulo.jpg" %>
-							<span>São Paulo</span>
-						</li>
-						<div class="clear s3sliderImage"></div>
-					</ul>
-					
-				</div>
-				
-				<!--Início Caixa de Login-->
-		    	<div id="caixa-login">
-		    		<h3>Login</h3>
-		    		<form>
-		    			<label><span>Email</span></label>
-		    			<input type="email" autofocus="true" required="true" />
-		    		
-		    			<label><span>Senha</span></label>
-		    			<input type="password" required="true" />
-		    		
-		    			<input class="botao botao-azul" type="submit" value="Entrar" />
-		    		</form>
-		    	</div>
-		    	
-		    	<!-- Início Opção Cadastrar Novo Usuário-->
-		    	<div id="caixa-cadastrar">
-		    		<label id="titulo-cadastrar">Não possui cadastro?</label>
-				    <a class="botao botao-azul" href="../Cadastro-de-Proprietario/Proprietario.html">Inscreva-se</a>
-					
-		    	</div>
+<!--Início Barra Lateral-->
+<aside>
+	<h2>Nome Usuário</h2>
+	<figure>
+		<figcaption><a>Alterar Foto</a></figcaption>
+		<%= image_tag "Icones/foto-usuario.png" %>
+		<!--<img src="../Imagens/Ícones/foto-usuario.png" alt="Nome Usuário" />-->
+	</figure>
+	<nav>
+		<p>
+			<%= image_tag "Icones/mensagens.png", :class=>"icone-menu" %>
+			<!--<img src="../Imagens/Ícones/mensagens.png" class="icone-menu" />-->
+			<a href="../Mensagens/Mensagens.html">  Mensagens (0)</a>
+		</p>
+		<p>
+			<!--<img src="../Imagens/Ícones/arquivo-hospedagem.png"  class="icone-menu" />-->
+			<%= image_tag "Icones/arquivo-hospedagem.png", :class=>"icone-menu" %>
+			<a href="../Cadastro-de-Hospedagem/index.html">Meus Imóveis</a>	
+		</p>
+		<p>
+			<%= image_tag "Icones/usuario.png", :class=>"icone-menu" %>
+			<!--<img src="../Imagens/Ícones/usuario.png" class="icone-menu" />-->
+			<a>Minha Conta</a>
+		</p>
+		<p>
+			<%= image_tag "Icones/sair.png", :class=>"icone-menu" %>
+			<!--<img src="../Imagens/Ícones/sair.png" class="icone-menu" />-->
+			<a>Sair</a>	
+		</p>
+	</nav>
+</aside>
+<section>
+	
+</section>
