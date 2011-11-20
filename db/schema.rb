@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111120020959) do
+ActiveRecord::Schema.define(:version => 20111120150507) do
 
   create_table "cidades", :force => true do |t|
     t.string   "nome",          :limit => 50, :null => false
@@ -27,6 +27,15 @@ ActiveRecord::Schema.define(:version => 20111120020959) do
 
   create_table "foto_cidades", :force => true do |t|
     t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mensagem_fale_conoscos", :force => true do |t|
+    t.string   "remetente",  :limit => 50, :null => false
+    t.string   "email",      :limit => 50, :null => false
+    t.string   "assunto",    :limit => 40, :null => false
+    t.text     "mensagem",                 :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

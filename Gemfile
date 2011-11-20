@@ -8,6 +8,7 @@ gem 'rails', '3.1.1'
 gem 'sqlite3'
 
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -18,6 +19,7 @@ end
 
 gem 'jquery-rails'
 gem 'devise', '1.1.rc0'
+gem "paperclip", "~> 2.4"
 
 
 # To use ActiveModel has_secure_password

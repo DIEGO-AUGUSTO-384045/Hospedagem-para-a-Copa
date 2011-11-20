@@ -1,4 +1,6 @@
 HospedagemParaACopa::Application.routes.draw do
+  get "fale_conosco/index"
+
   get "home/index"
 
   get "inicio/Index"
