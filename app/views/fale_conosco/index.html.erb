@@ -1,2 +1,39 @@
-<h1>FaleConosco#index</h1>
-<p>Find me in app/views/fale_conosco/index.html.erb</p>
+<section id="painel-pequeno">
+    		
+	<!-- Início da caixa do Fale Conosco -->
+	<%= form_for @mensagem, :html => { :id => "fale-conosco" } do |f| %>
+	
+		<%= f.label :remetente, 'Nome:' %>
+		<%= f.text_field :remetente %>
+	
+	<% end %>
+	
+	
+	
+	
+	
+	
+	<!--
+    <form id="fale-conosco">
+    	<fieldset>
+    		<legend>Fale Conosco</legend>
+    				
+    			<label>Nome: </label>					
+    			<input type="text" id="nome" required="" />	
+    				
+    			<label>E-mail: </label>			
+    			<input type="email" required="" class="email"/>	
+    				
+    			<label>Assunto: </label>   					
+    			<input type="text" required=""/>	
+    				
+    			<label>Mensagem: </label>
+    			<textarea rows="2" cols="20"></textarea>					
+	
+				<input class="botao botao-azul" type="submit" value="Enviar" />	
+  				
+    		</fieldset>
+    </form>
+    
+   -->
+</section>

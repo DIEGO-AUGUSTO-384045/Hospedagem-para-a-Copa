@@ -413,6 +413,13 @@ input[type='date']{
 	font-size: medium;
 }
 
+input[type="submit"]{
+	width: 80px;
+	margin-left: 200px;
+	box-shadow: 0px 0px 5px #00CCFF;
+	height: 37px;  
+}
+
 
 address{
 	 float: right;
@@ -420,6 +427,16 @@ address{
     padding: 5px;
     position: relative;
     width: 99%;
+}
+
+textarea{
+    max-height: 150px;
+    max-width: 500px;
+    min-height: 150px;
+    min-width: 500px;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
