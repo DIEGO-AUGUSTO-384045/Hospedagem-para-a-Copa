@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111119195315) do
+ActiveRecord::Schema.define(:version => 20111120013854) do
+
+  create_table "cidades", :force => true do |t|
+    t.string   "nome",          :limit => 50, :null => false
+    t.date     "data_fundacao"
+    t.float    "area"
+    t.integer  "populacao"
+    t.float    "altitude"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pais", :force => true do |t|
+    t.string   "nome",       :limit => 50, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  data_fundacao: 2011-11-19
+  area: 1.5
+  populacao: 1
+  altitude: 1.5
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  nome: MyString
+  data_fundacao: 2011-11-19
+  area: 1.5
+  populacao: 1
+  altitude: 1.5
+  longitude: 1.5
+  latitude: 1.5
