@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111120181845) do
+ActiveRecord::Schema.define(:version => 20111120211150) do
 
   create_table "cidades", :force => true do |t|
     t.string   "nome",          :limit => 50, :null => false
@@ -58,6 +58,13 @@ ActiveRecord::Schema.define(:version => 20111120181845) do
 
   create_table "pais", :force => true do |t|
     t.string   "nome",       :limit => 50, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "potzs", :force => true do |t|
+    t.integer  "codigo_cupom"
+    t.integer  "valor"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
