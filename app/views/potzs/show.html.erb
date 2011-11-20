@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo cupom:</b>
+  <%= @potz.codigo_cupom %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @potz.valor %>
+</p>
+
+
+<%= link_to 'Edit', edit_potz_path(@potz) %> |
+<%= link_to 'Back', potzs_path %>

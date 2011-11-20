@@ -1,0 +1,25 @@
+<%= form_for(@potz) do |f| %>
+  <% if @potz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@potz.errors.count, "error") %> prohibited this potz from being saved:</h2>
+
+      <ul>
+      <% @potz.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo_cupom %><br />
+    <%= f.number_field :codigo_cupom %>
+  </div>
+  <div class="field">
+    <%= f.label :valor %><br />
+    <%= f.number_field :valor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
