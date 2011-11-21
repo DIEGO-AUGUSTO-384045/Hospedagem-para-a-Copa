@@ -1,4 +1,8 @@
 class PotzsController < ApplicationController
+  
+  
+  
+  
   # GET /potzs
   # GET /potzs.json
   def index

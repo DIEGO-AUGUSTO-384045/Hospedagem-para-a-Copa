@@ -14,5 +14,7 @@ class CreateCidades < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :cidades, :foto_cidade_id, :unique =>true
+    add_index :cidades, :pais_id, :unique => true
   end
 end

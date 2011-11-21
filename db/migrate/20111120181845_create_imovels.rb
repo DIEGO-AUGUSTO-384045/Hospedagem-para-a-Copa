@@ -9,5 +9,6 @@ class CreateImovels < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :imovels, :foto_imovel_id, :unique => true
   end
 end

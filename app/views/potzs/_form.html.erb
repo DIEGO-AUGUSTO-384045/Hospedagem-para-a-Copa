@@ -24,8 +24,13 @@
 		</p>
 	</nav>
 </aside>
-<section>
 
+<section>
+<article>
+
+<header>
+	<h3>POTZ</h3>
+</header>
 
 <%= form_for(@potz) do |f| %>
   <% if @potz.errors.any? %>
@@ -42,14 +47,17 @@
 
   <div class="field">
     <%= f.label :codigo_cupom %><br />
-    <%= f.number_field :codigo_cupom %>
+    <%= f.text_field :codigo_cupom %>
   </div>
   <div class="field">
     <%= f.label :valor %><br />
-    <%= f.number_field :valor %>
+    <%= f.text_field :valor %>
   </div>
-  <div class="actions">
+  <footer>
     <%= f.submit %>
-  </div>
+    <%= link_to 'Voltar', potzs_path %>
+  </footer>
+</article>
 <% end %>
+
 </section>
