@@ -1,3 +1,36 @@
 // Place all the styles related to the FaleConosco controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#fale-conosco {
+    background-color: #F5F5F5;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px #888888;
+    float: none;
+    height: 545px;
+    margin: 40px auto;
+    padding: 20px 20px 30px;
+    width: 575px;
+    margin-top: 100px;
+}
+  
+
+
+form#fale-conosco input {
+  border: 1px solid black;
+  font-size: medium;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 489px;
+}
+
+
+form#fale-conosco fieldset {
+  border: 1px solid blue;
+    border-radius: 5px 5px 5px 5px;
+    height: 460px;
+    margin: 20px;
+    padding: 20px 20px 30px 20px;
+    width: 500px; 
+
+}

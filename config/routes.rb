@@ -1,5 +1,11 @@
 HospedagemParaACopa::Application.routes.draw do
+
   get "quem_somos/index"
+
+  resources :potzs
+
+  resources :imovels
+
 
   get "fale_conosco/index"
 

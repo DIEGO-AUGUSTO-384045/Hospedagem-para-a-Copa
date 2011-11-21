@@ -8,6 +8,9 @@ class CreateCidades < ActiveRecord::Migration
       t.float :altitude, :null => true
       t.float :longitude, :null => true
       t.float :latitude, :null => true
+      
+      t.references :Pais
+      t.references :Foto_Cidade
 
       t.timestamps
     end

@@ -1,0 +1,85 @@
+<!--Início Barra Lateral-->
+<aside>
+	<h2>Nome Usuário</h2>
+	<figure>
+		<figcaption><a>Alterar Foto</a></figcaption>
+		<%= image_tag "Icones/foto-usuario.png" %>
+	</figure>
+	<nav>
+		<p>
+			<%= image_tag "Icones/mensagens.png", :class=>"icone-menu" %>
+			<a href="../Mensagens/Mensagens.html">  Mensagens (0)</a>
+		</p>
+		<p>
+			<%= image_tag "Icones/arquivo-hospedagem.png", :class=>"icone-menu" %>
+			<%= link_to "Meus Imóveis", :controller => "imovels", :action => "index"%> 
+		</p>
+		<p>
+			<%= image_tag "Icones/usuario.png", :class=>"icone-menu" %>
+			<a>Minha Conta</a>
+		</p>
+		<p>
+			<%= image_tag "Icones/sair.png", :class=>"icone-menu" %>
+			<a>Sair</a>	
+		</p>
+	</nav>
+</aside>
+			
+
+<section>
+
+<header>
+	<h3>Cadastrar Hospedagem</h3>
+</header>
+
+<article>
+	<fieldset>
+		<legend>Informações</legend>
+
+<%= form_for(@imovel) do |f| %>
+  <% if @imovel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@imovel.errors.count, "error") %> prohibited this imovel from being saved:</h2>
+
+      <ul>
+      <% @imovel.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :valor %><br />
+    <%= f.text_field :valor %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :qtde_comodos %><br />
+    <%= f.number_field :qtde_comodos %>
+  </div>
+  <div class="field">
+    <%= f.label :Foto_Imovel %><br />
+    <%= f.text_field :Foto_Imovel %>
+  </div>
+
+
+</fieldset>
+
+<fieldset>
+	<legend>Mapa</legend>
+	<div id="container-mapa">
+							
+	</div>  				
+</fieldset>
+
+
+</article>
+<footer>
+	<%= f.submit %>
+</footer>
+<% end %>
+</section>

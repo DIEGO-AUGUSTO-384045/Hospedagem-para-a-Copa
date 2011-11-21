@@ -25,5 +25,31 @@
 	</nav>
 </aside>
 <section>
+
+<article>
 	
+	<header><%= link_to 'Novo', new_imovel_path, :class => "botao botao-azul" %></header>
+	<table class="tabela1">
+	<thead>
+		<th id="coluna-opcao">Opções</th>
+		<th id="coluna-endereco">Endereco</th>
+  	</thead>
+  <tbody>
+<% @imovels.each do |imovel| %>
+  <tr>
+  	
+  	<td>
+    	<%= link_to 'Exibir', imovel %>
+        <%= link_to 'Editar', edit_imovel_path(imovel) %>
+        <%= link_to 'Excluir', imovel, confirm: 'Are you sure?', method: :delete %>
+    </td>
+
+  	<td><%= imovel.endereco %></td>
+    
+  </tr>
+<% end %>
+
+</tbody>
+</table>
+</article>
 </section>
