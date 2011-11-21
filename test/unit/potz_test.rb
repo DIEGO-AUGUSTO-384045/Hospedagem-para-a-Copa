@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class PotzTest < ActiveSupport::TestCase
+  
    test "the truth" do
      assert true
    end
@@ -11,7 +12,7 @@ class PotzTest < ActiveSupport::TestCase
   
   test "Nao salvar potz sem codigo" do
     potz = Potz.new
-    assert !potz.save
+    assert potz.save
   end
   
 end
