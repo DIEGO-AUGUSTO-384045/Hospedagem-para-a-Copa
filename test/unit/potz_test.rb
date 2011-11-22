@@ -2,17 +2,17 @@ require 'test_helper'
 
 class PotzTest < ActiveSupport::TestCase
   
-   test "the truth" do
-     assert true
-   end
+#   test "the truth" do
+#     assert true
+#   end
   
-  test "Cadastra Potz" do
-    assert true
-  end
+#  test "Cadastra Potz" do
+#    assert_equal true, true
+#  end
   
-  test "Nao salvar potz sem codigo" do
+  test "Valida Codigo Cupom" do
     potz = Potz.new
-    assert potz.save
+    assert true, @potz.valida_digito_verificador('7777777777').
   end
   
 end

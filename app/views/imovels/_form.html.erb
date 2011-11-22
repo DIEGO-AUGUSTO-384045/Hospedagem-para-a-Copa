@@ -63,7 +63,7 @@
   </div>
   <div class="field">
     <%= f.label :Foto_Imovel %><br />
-    <%= f.text_field :Foto_Imovel %>
+    <%= f.file_field :Foto_Imovel %>
   </div>
 
 
@@ -79,7 +79,10 @@
 
 </article>
 <footer>
+	
 	<%= f.submit %>
+	<%= link_to 'Voltar', imovels_path, :class => "botao botao-azul"%>
+
 </footer>
 <% end %>
 </section>
